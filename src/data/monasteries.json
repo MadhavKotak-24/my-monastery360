@@ -1,194 +1,271 @@
 [
   {
-    "id": "tashilhunpo",
-    "name": "Tashilhunpo Monastery",
-    "shortDescription": "One of the most historically and culturally important monasteries in Tibet",
-    "fullDescription": "Tashilhunpo Monastery is a historic and culturally important monastery in Shigatse, the second-largest city in Tibet. The monastery was founded in 1447 by the 1st Dalai Lama and is the traditional seat of successive Panchen Lamas.",
-    "yearFounded": 1447,
+    "id": "rumtek",
+    "name": "Rumtek Monastery",
+    "shortDescription": "Largest monastery in Sikkim, seat of the Karma Kagyu lineage",
+    "fullDescription": "Rumtek Monastery, also known as the Dharma Chakra Centre, is the largest monastery in Sikkim and the main seat of the Karma Kagyu lineage outside Tibet. Originally built in the 1740s by Changchub Dorje, the 12th Karmapa, it was rebuilt in the 1960s by the 16th Karmapa. Located 24 km from Gangtok, it sits majestically at 5,500 feet above sea level and is renowned for its golden stupa and sacred relics.",
+    "yearFounded": 1740,
     "location": {
-      "lat": 29.2675,
-      "lng": 88.8782,
-      "address": "Shigatse, Tibet Autonomous Region, China"
+      "lat": 27.2886,
+      "lng": 88.5617,
+      "address": "Rumtek, East Sikkim 737135, India"
     },
     "images": {
-      "main": "/src/assets/monastery-tibetan.jpg",
+      "main": "/src/assets/rumtek-monastery.jpg",
       "gallery": [
-        "/src/assets/monastery-tibetan.jpg"
+        "/src/assets/rumtek-monastery.jpg"
       ]
     },
     "panorama": {
-      "url": "/panoramas/tashilhunpo-360.jpg",
+      "url": "/panoramas/rumtek-360.jpg",
+      "hotspots": [
+        {
+          "id": "main-temple",
+          "pitch": 15,
+          "yaw": 0,
+          "type": "info",
+          "text": "Main Temple - Four-storied temple with vibrant Tibetan Buddhist art and golden stupa"
+        },
+        {
+          "id": "courtyard",
+          "pitch": -5,
+          "yaw": 90,
+          "type": "info", 
+          "text": "Monastery Courtyard - Sacred space where ritual lama dances are performed during festivals"
+        },
+        {
+          "id": "monks-quarters",
+          "pitch": 0,
+          "yaw": -90,
+          "type": "info",
+          "text": "Monks' Quarters - Residential areas surrounding the temple complex"
+        }
+      ]
+    },
+    "audioNarration": "/audio/rumtek-narration.mp3",
+    "archives": [
+      {
+        "id": "karmapa-relics",
+        "title": "Sacred Relics of the Karmapas",
+        "type": "artifact",
+        "thumbnail": "/archives/karmapa-relics-thumb.jpg",
+        "fullImage": "/archives/karmapa-relics-full.jpg",
+        "caption": "Precious relics and ritual objects of the Karmapa lineage",
+        "metadata": {
+          "date": "16th-20th century",
+          "material": "Gold, silver, precious stones",
+          "significance": "Lineage transmission objects"
+        }
+      },
+      {
+        "id": "thangka-paintings",
+        "title": "Traditional Thangka Paintings",
+        "type": "artwork",
+        "thumbnail": "/archives/thangka-thumb.jpg",
+        "fullImage": "/archives/thangka-full.jpg",
+        "caption": "Sacred Buddhist paintings depicting deities and mandalas",
+        "metadata": {
+          "date": "18th-19th century",
+          "material": "Natural pigments on silk",
+          "artist": "Tibetan master artists"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Losar (Tibetan New Year)",
+        "date": "2025-02-28",
+        "description": "Three-day celebration marking the Tibetan New Year with prayers, dances, and festivities"
+      },
+      {
+        "name": "Saga Dawa",
+        "date": "2024-06-22",
+        "description": "Sacred month celebrating Buddha's birth, enlightenment, and parinirvana"
+      },
+      {
+        "name": "Karmapa's Birthday",
+        "date": "2024-06-26",
+        "description": "Annual celebration honoring His Holiness the 17th Karmapa"
+      }
+    ]
+  },
+  {
+    "id": "pemayangtse",
+    "name": "Pemayangtse Monastery",
+    "shortDescription": "Sacred Nyingma monastery meaning 'Perfect Sublime Lotus'",
+    "fullDescription": "Pemayangtse Monastery, established in 1705, is one of the oldest and most significant monasteries in Sikkim. Built by Lama Lhatsun Chempo, it belongs to the Nyingma school of Tibetan Buddhism. The name means 'Perfect Sublime Lotus' and only monks of pure Tibetan lineage are admitted here. Located at 6,840 feet in Pelling, it offers spectacular views of Kanchenjunga and houses a remarkable seven-tiered wooden sculpture depicting the heavenly palace of Guru Rinpoche.",
+    "yearFounded": 1705,
+    "location": {
+      "lat": 27.3056,
+      "lng": 88.2528,
+      "address": "Pelling, West Sikkim 737113, India"
+    },
+    "images": {
+      "main": "/src/assets/pemayangtse-monastery.jpg",
+      "gallery": [
+        "/src/assets/pemayangtse-monastery.jpg"
+      ]
+    },
+    "panorama": {
+      "url": "/panoramas/pemayangtse-360.jpg",
       "hotspots": [
         {
           "id": "main-hall",
           "pitch": 10,
           "yaw": 0,
           "type": "info",
-          "text": "Main Prayer Hall - Built in 1447, this is where monks gather for daily prayers"
+          "text": "Main Prayer Hall - Contains ancient Buddhist statues and murals from the 18th century"
         },
         {
-          "id": "stupa",
-          "pitch": -5,
-          "yaw": 90,
-          "type": "info", 
-          "text": "Golden Stupa - Contains relics of past Panchen Lamas"
-        }
-      ]
-    },
-    "audioNarration": "/audio/tashilhunpo-narration.mp3",
-    "archives": [
-      {
-        "id": "manuscript-1",
-        "title": "Ancient Buddhist Manuscripts",
-        "type": "manuscript",
-        "thumbnail": "/archives/manuscript-thumb.jpg",
-        "fullImage": "/archives/manuscript-full.jpg",
-        "caption": "15th century Buddhist texts written in Tibetan script",
-        "metadata": {
-          "date": "15th century",
-          "material": "Paper and ink",
-          "language": "Tibetan"
-        }
-      },
-      {
-        "id": "mural-1", 
-        "title": "Wall Murals of Buddha",
-        "type": "mural",
-        "thumbnail": "/archives/mural-thumb.jpg",
-        "fullImage": "/archives/mural-full.jpg",
-        "caption": "Traditional Tibetan Buddhist murals depicting the life of Buddha",
-        "metadata": {
-          "date": "16th century",
-          "material": "Natural pigments on wall",
-          "artist": "Unknown monastery artists"
-        }
-      }
-    ],
-    "culturalEvents": [
-      {
-        "name": "Panchen Lama Festival",
-        "date": "2024-05-15",
-        "description": "Annual celebration honoring the Panchen Lama tradition"
-      }
-    ]
-  },
-  {
-    "id": "montecassino",
-    "name": "Monte Cassino Abbey",
-    "shortDescription": "Historic Benedictine monastery, mother house of the Benedictine order",
-    "fullDescription": "The Abbey of Monte Cassino is a rocky hill about 130 kilometres southeast of Rome, in the Latin Valley, Italy. Originally built in AD 529 by Benedict of Nursia, it has been destroyed and rebuilt multiple times throughout history.",
-    "yearFounded": 529,
-    "location": {
-      "lat": 41.4893,
-      "lng": 13.8136,
-      "address": "Via Montecassino, 03043 Cassino FR, Italy"
-    },
-    "images": {
-      "main": "/src/assets/monastery-christian.jpg",
-      "gallery": [
-        "/src/assets/monastery-christian.jpg"
-      ]
-    },
-    "panorama": {
-      "url": "/panoramas/montecassino-360.jpg",
-      "hotspots": [
-        {
-          "id": "basilica",
-          "pitch": 15,
-          "yaw": 0,
+          "id": "wooden-sculpture",
+          "pitch": 20,
+          "yaw": 45,
           "type": "info",
-          "text": "Basilica - Rebuilt after WWII destruction, maintaining original Benedictine architecture"
+          "text": "Seven-Tiered Sculpture - Intricate wooden carving of Guru Rinpoche's celestial palace"
         },
         {
-          "id": "crypt",
+          "id": "kanchenjunga-view",
           "pitch": -10,
           "yaw": 180,
           "type": "info",
-          "text": "Crypt of St. Benedict - Tomb of the founder of Western monasticism"
+          "text": "Kanchenjunga View - Stunning panoramic view of the world's third highest peak"
         }
       ]
     },
-    "audioNarration": "/audio/montecassino-narration.mp3",
+    "audioNarration": "/audio/pemayangtse-narration.mp3",
     "archives": [
       {
-        "id": "rule-benedict",
-        "title": "Rule of St. Benedict",
+        "id": "ancient-manuscripts",
+        "title": "Nyingma Buddhist Texts",
         "type": "manuscript",
-        "thumbnail": "/archives/rule-thumb.jpg", 
-        "fullImage": "/archives/rule-full.jpg",
-        "caption": "Medieval copy of the Rule of St. Benedict, foundation of Western monasticism",
+        "thumbnail": "/archives/nyingma-manuscripts-thumb.jpg",
+        "fullImage": "/archives/nyingma-manuscripts-full.jpg",
+        "caption": "Rare collection of ancient Nyingma Buddhist teachings and commentaries",
         "metadata": {
-          "date": "12th century",
-          "material": "Parchment and illuminated text",
-          "language": "Latin"
+          "date": "18th-19th century",
+          "material": "Handmade paper and natural inks",
+          "language": "Tibetan and Sanskrit"
+        }
+      },
+      {
+        "id": "ritual-masks",
+        "title": "Sacred Cham Dance Masks",
+        "type": "artifact",
+        "thumbnail": "/archives/cham-masks-thumb.jpg",
+        "fullImage": "/archives/cham-masks-full.jpg",
+        "caption": "Traditional masks used in ritual Cham dances during Buddhist festivals",
+        "metadata": {
+          "date": "19th century",
+          "material": "Papier-mâché, natural pigments",
+          "significance": "Sacred dance performances"
         }
       }
     ],
     "culturalEvents": [
       {
-        "name": "Feast of St. Benedict",
-        "date": "2024-07-11",
-        "description": "Annual celebration of the patron saint of Europe"
+        "name": "Chaam Festival",
+        "date": "2024-12-15",
+        "description": "Sacred masked dance festival featuring traditional Cham performances"
+      },
+      {
+        "name": "Guru Rinpoche Festival",
+        "date": "2024-07-13",
+        "description": "Celebration honoring Padmasambhava, the founder of Tibetan Buddhism"
+      },
+      {
+        "name": "Hemis Festival",
+        "date": "2024-07-03",
+        "description": "Annual festival celebrating the birth anniversary of Guru Padmasambhava"
       }
     ]
   },
   {
-    "id": "kanchipuram",
-    "name": "Kanchipuram Temple Complex",
-    "shortDescription": "Ancient Hindu temple complex and spiritual learning center",
-    "fullDescription": "Kanchipuram, known as the 'City of Thousand Temples', houses several ancient Hindu temple complexes that have served as centers of spiritual learning and monastic life for over a millennium.",
-    "yearFounded": 650,
+    "id": "enchey",
+    "name": "Enchey Monastery",
+    "shortDescription": "Solitary temple overlooking Gangtok with Kanchenjunga views",
+    "fullDescription": "Enchey Monastery, meaning 'Solitary Temple', was built in 1909 on a ridge overlooking Gangtok. Belonging to the Nyingma order of Tibetan Buddhism, it is believed to be built on the site blessed by Lama Druptob Karpo, a tantric master with flying powers. The monastery houses 90 monks and is famous for its annual Chaam dance during the Pang Lhabsol festival. Its strategic location offers breathtaking views of Kanchenjunga on clear days.",
+    "yearFounded": 1909,
     "location": {
-      "lat": 12.8342,
-      "lng": 79.7036,
-      "address": "Kanchipuram, Tamil Nadu 631502, India"
+      "lat": 27.3389,
+      "lng": 88.6169,
+      "address": "Gangtok, East Sikkim 737101, India"
     },
     "images": {
-      "main": "/src/assets/monastery-hindu.jpg",
+      "main": "/src/assets/enchey-monastery.jpg",
       "gallery": [
-        "/src/assets/monastery-hindu.jpg"
+        "/src/assets/enchey-monastery.jpg"
       ]
     },
     "panorama": {
-      "url": "/panoramas/kanchipuram-360.jpg",
+      "url": "/panoramas/enchey-360.jpg",
       "hotspots": [
         {
-          "id": "main-shrine",
-          "pitch": 20,
+          "id": "prayer-hall",
+          "pitch": 15,
           "yaw": 0,
           "type": "info",
-          "text": "Main Shrine - Dedicated to Lord Vishnu, carved from single stone block"
+          "text": "Prayer Hall - Beautifully decorated with traditional Sikkimese and Tibetan Buddhist art"
         },
         {
-          "id": "meditation-hall",
-          "pitch": 0,
+          "id": "gangtok-view",
+          "pitch": -20,
           "yaw": -90,
           "type": "info",
-          "text": "Meditation Hall - Where monks practice daily meditation and scriptural study"
+          "text": "Gangtok City View - Panoramic overlook of Sikkim's capital city below"
+        },
+        {
+          "id": "prayer-wheels",
+          "pitch": 0,
+          "yaw": 90,
+          "type": "info",
+          "text": "Prayer Wheels - Traditional spinning wheels inscribed with mantras for devotional practice"
         }
       ]
     },
-    "audioNarration": "/audio/kanchipuram-narration.mp3",
+    "audioNarration": "/audio/enchey-narration.mp3",
     "archives": [
       {
-        "id": "palm-leaf",
-        "title": "Palm Leaf Manuscripts",
-        "type": "manuscript", 
-        "thumbnail": "/archives/palm-leaf-thumb.jpg",
-        "fullImage": "/archives/palm-leaf-full.jpg",
-        "caption": "Ancient Sanskrit texts inscribed on palm leaves",
+        "id": "lama-druptob-artifacts",
+        "title": "Lama Druptob Karpo Relics",
+        "type": "artifact",
+        "thumbnail": "/archives/lama-druptob-thumb.jpg",
+        "fullImage": "/archives/lama-druptob-full.jpg",
+        "caption": "Sacred objects and relics associated with the tantric master Lama Druptob Karpo",
         "metadata": {
-          "date": "10th century",
-          "material": "Palm leaves and metal stylus",
-          "language": "Sanskrit"
+          "date": "Late 19th century",
+          "material": "Various sacred materials",
+          "significance": "Founding tantric master's legacy"
+        }
+      },
+      {
+        "id": "sikkim-paintings",
+        "title": "Traditional Sikkimese Art",
+        "type": "artwork",
+        "thumbnail": "/archives/sikkim-art-thumb.jpg",
+        "fullImage": "/archives/sikkim-art-full.jpg",
+        "caption": "Unique blend of Tibetan, Nepali, and local Sikkimese artistic traditions",
+        "metadata": {
+          "date": "Early 20th century",
+          "material": "Natural pigments on wall",
+          "artist": "Local Sikkimese artists"
         }
       }
     ],
     "culturalEvents": [
       {
-        "name": "Brahmotsavam Festival",
-        "date": "2024-04-20",
-        "description": "Grand annual festival celebrating divine presence"
+        "name": "Pang Lhabsol",
+        "date": "2024-09-07",
+        "description": "Guardian deity festival featuring sacred Cham dances and traditional ceremonies"
+      },
+      {
+        "name": "Bhumchu Festival",
+        "date": "2025-02-24",
+        "description": "Sacred water vessel ceremony at nearby Tashiding, participated by Enchey monks"
+      },
+      {
+        "name": "Drupka Teshi",
+        "date": "2024-08-04",
+        "description": "Festival celebrating Buddha's first teaching and the turning of the Dharma wheel"
       }
     ]
   }
