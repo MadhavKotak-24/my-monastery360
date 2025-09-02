@@ -78,14 +78,24 @@
         "description": "Three-day celebration marking the Tibetan New Year with prayers, dances, and festivities"
       },
       {
-        "name": "Saga Dawa",
-        "date": "2024-06-22",
-        "description": "Sacred month celebrating Buddha's birth, enlightenment, and parinirvana"
+        "name": "Saga Dawa Festival",
+        "date": "2025-06-11",
+        "description": "Sacred month celebrating Buddha's birth, enlightenment, and parinirvana with special prayers and offerings"
       },
       {
-        "name": "Karmapa's Birthday",
-        "date": "2024-06-26",
-        "description": "Annual celebration honoring His Holiness the 17th Karmapa"
+        "name": "Karmapa's Birthday Celebration",
+        "date": "2025-06-26",
+        "description": "Annual celebration honoring His Holiness the 17th Karmapa with teachings and ceremonies"
+      },
+      {
+        "name": "Guru Rinpoche Day",
+        "date": "2025-08-10",
+        "description": "Monthly celebration of Padmasambhava with special pujas and community feast"
+      },
+      {
+        "name": "Chokhor Duchen",
+        "date": "2025-08-24",
+        "description": "Festival commemorating Buddha's first teaching and turning of the Dharma wheel"
       }
     ]
   },
@@ -164,18 +174,28 @@
     "culturalEvents": [
       {
         "name": "Chaam Festival",
-        "date": "2024-12-15",
-        "description": "Sacred masked dance festival featuring traditional Cham performances"
+        "date": "2025-01-15",
+        "description": "Sacred masked dance festival featuring traditional Cham performances and ancient rituals"
       },
       {
         "name": "Guru Rinpoche Festival",
-        "date": "2024-07-13",
-        "description": "Celebration honoring Padmasambhava, the founder of Tibetan Buddhism"
+        "date": "2025-07-13",
+        "description": "Grand celebration honoring Padmasambhava with special teachings, ceremonies, and community prayers"
       },
       {
         "name": "Hemis Festival",
-        "date": "2024-07-03",
-        "description": "Annual festival celebrating the birth anniversary of Guru Padmasambhava"
+        "date": "2025-06-29",
+        "description": "Spectacular festival celebrating Guru Padmasambhava's birth with masked dances and cultural performances"
+      },
+      {
+        "name": "Buddha Purnima",
+        "date": "2025-05-12",
+        "description": "Sacred day celebrating Buddha's birth, enlightenment, and parinirvana with special ceremonies"
+      },
+      {
+        "name": "Nyungne Retreat",
+        "date": "2025-03-20",
+        "description": "Two-day purification retreat with fasting, meditation, and compassion practices"
       }
     ]
   },
@@ -254,18 +274,33 @@
     "culturalEvents": [
       {
         "name": "Pang Lhabsol",
-        "date": "2024-09-07",
-        "description": "Guardian deity festival featuring sacred Cham dances and traditional ceremonies"
+        "date": "2025-09-07",
+        "description": "Guardian deity festival featuring sacred Cham dances, traditional ceremonies, and mountain deity worship"
       },
       {
         "name": "Bhumchu Festival",
         "date": "2025-02-24",
-        "description": "Sacred water vessel ceremony at nearby Tashiding, participated by Enchey monks"
+        "description": "Sacred water vessel ceremony with ancient prophecies and blessings for the coming year"
       },
       {
         "name": "Drupka Teshi",
-        "date": "2024-08-04",
-        "description": "Festival celebrating Buddha's first teaching and the turning of the Dharma wheel"
+        "date": "2025-08-04",
+        "description": "Festival celebrating Buddha's first teaching with special prayers and community gatherings"
+      },
+      {
+        "name": "Tendong Lho Rum Faat",
+        "date": "2025-08-15",
+        "description": "Unique Sikkimese festival celebrating the sacred mountain Tendong with cultural performances"
+      },
+      {
+        "name": "Dussehra Celebration",
+        "date": "2025-10-02",
+        "description": "Ten-day festival celebrating the victory of good over evil with special Buddhist ceremonies"
+      },
+      {
+        "name": "Winter Solstice Prayer",
+        "date": "2025-12-21",
+        "description": "Sacred prayers for light and renewal during the longest night of the year"
       }
     ]
   }
