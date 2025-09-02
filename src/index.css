@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,89 +10,123 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Monastery-inspired color palette */
+    --background: 35 25% 97%;
+    --foreground: 25 35% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 40 20% 98%;
+    --card-foreground: 25 35% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 40 20% 98%;
+    --popover-foreground: 25 35% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Rich monastery brown */
+    --primary: 25 45% 25%;
+    --primary-foreground: 35 25% 97%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm cream secondary */
+    --secondary: 40 30% 92%;
+    --secondary-foreground: 25 45% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Soft muted tones */
+    --muted: 35 20% 90%;
+    --muted-foreground: 25 20% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Golden accent */
+    --accent: 45 65% 75%;
+    --accent-foreground: 25 45% 25%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 35 25% 97%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 15% 88%;
+    --input: 35 15% 88%;
+    --ring: 25 45% 25%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Monastery sidebar colors */
+    --sidebar-background: 25 30% 95%;
+    --sidebar-foreground: 25 25% 35%;
+    --sidebar-primary: 25 45% 25%;
+    --sidebar-primary-foreground: 35 25% 97%;
+    --sidebar-accent: 40 25% 88%;
+    --sidebar-accent-foreground: 25 45% 25%;
+    --sidebar-border: 35 15% 85%;
+    --sidebar-ring: 45 65% 75%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Custom monastery design tokens */
+    --monastery-stone: 35 15% 85%;
+    --monastery-wood: 25 35% 45%;
+    --monastery-gold: 45 65% 65%;
+    --monastery-sage: 100 20% 75%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--monastery-wood)));
+    --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--monastery-stone)));
+    --gradient-golden: linear-gradient(135deg, hsl(var(--monastery-gold)), hsl(var(--accent)));
+    
+    /* Shadows */
+    --shadow-monastery: 0 10px 40px -15px hsl(var(--primary) / 0.2);
+    --shadow-card: 0 4px 20px -8px hsl(var(--primary) / 0.15);
+    --shadow-glow: 0 0 30px hsl(var(--monastery-gold) / 0.3);
+    
+    /* Transitions */
+    --transition-monastery: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark monastery theme */
+    --background: 25 25% 8%;
+    --foreground: 35 25% 92%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 25 20% 12%;
+    --card-foreground: 35 25% 92%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 25 20% 12%;
+    --popover-foreground: 35 25% 92%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 45 65% 75%;
+    --primary-foreground: 25 25% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 25 15% 18%;
+    --secondary-foreground: 35 25% 92%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 25 15% 18%;
+    --muted-foreground: 35 15% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 25 35% 25%;
+    --accent-foreground: 35 25% 92%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 35 25% 92%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 25 15% 20%;
+    --input: 25 15% 20%;
+    --ring: 45 65% 75%;
+    
+    --sidebar-background: 25 20% 10%;
+    --sidebar-foreground: 35 20% 85%;
+    --sidebar-primary: 45 65% 75%;
+    --sidebar-primary-foreground: 25 25% 8%;
+    --sidebar-accent: 25 15% 18%;
+    --sidebar-accent-foreground: 35 20% 85%;
+    --sidebar-border: 25 15% 20%;
+    --sidebar-ring: 45 65% 75%;
+
+    /* Dark monastery tokens */
+    --monastery-stone: 25 10% 22%;
+    --monastery-wood: 25 25% 35%;
+    --monastery-gold: 45 75% 65%;
+    --monastery-sage: 100 15% 45%;
+    
+    --gradient-hero: linear-gradient(135deg, hsl(var(--monastery-gold)), hsl(var(--primary)));
+    --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--monastery-stone)));
+    --gradient-golden: linear-gradient(135deg, hsl(var(--monastery-gold)), hsl(var(--accent)));
+    
+    --shadow-monastery: 0 10px 40px -15px hsl(0 0% 0% / 0.4);
+    --shadow-card: 0 4px 20px -8px hsl(0 0% 0% / 0.3);
+    --shadow-glow: 0 0 30px hsl(var(--monastery-gold) / 0.2);
   }
 }
 
@@ -100,6 +136,34 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-serif;
+    font-feature-settings: "liga" 1, "kern" 1;
+  }
+
+  /* Custom monastery utilities */
+  .monastery-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .monastery-card {
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-monastery);
+  }
+  
+  .monastery-card:hover {
+    box-shadow: var(--shadow-monastery);
+    transform: translateY(-2px);
+  }
+  
+  .monastery-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .monastery-text-gradient {
+    background: var(--gradient-golden);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

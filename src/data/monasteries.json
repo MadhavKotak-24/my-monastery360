@@ -1,0 +1,195 @@
+[
+  {
+    "id": "tashilhunpo",
+    "name": "Tashilhunpo Monastery",
+    "shortDescription": "One of the most historically and culturally important monasteries in Tibet",
+    "fullDescription": "Tashilhunpo Monastery is a historic and culturally important monastery in Shigatse, the second-largest city in Tibet. The monastery was founded in 1447 by the 1st Dalai Lama and is the traditional seat of successive Panchen Lamas.",
+    "yearFounded": 1447,
+    "location": {
+      "lat": 29.2675,
+      "lng": 88.8782,
+      "address": "Shigatse, Tibet Autonomous Region, China"
+    },
+    "images": {
+      "main": "/src/assets/monastery-tibetan.jpg",
+      "gallery": [
+        "/src/assets/monastery-tibetan.jpg"
+      ]
+    },
+    "panorama": {
+      "url": "/panoramas/tashilhunpo-360.jpg",
+      "hotspots": [
+        {
+          "id": "main-hall",
+          "pitch": 10,
+          "yaw": 0,
+          "type": "info",
+          "text": "Main Prayer Hall - Built in 1447, this is where monks gather for daily prayers"
+        },
+        {
+          "id": "stupa",
+          "pitch": -5,
+          "yaw": 90,
+          "type": "info", 
+          "text": "Golden Stupa - Contains relics of past Panchen Lamas"
+        }
+      ]
+    },
+    "audioNarration": "/audio/tashilhunpo-narration.mp3",
+    "archives": [
+      {
+        "id": "manuscript-1",
+        "title": "Ancient Buddhist Manuscripts",
+        "type": "manuscript",
+        "thumbnail": "/archives/manuscript-thumb.jpg",
+        "fullImage": "/archives/manuscript-full.jpg",
+        "caption": "15th century Buddhist texts written in Tibetan script",
+        "metadata": {
+          "date": "15th century",
+          "material": "Paper and ink",
+          "language": "Tibetan"
+        }
+      },
+      {
+        "id": "mural-1", 
+        "title": "Wall Murals of Buddha",
+        "type": "mural",
+        "thumbnail": "/archives/mural-thumb.jpg",
+        "fullImage": "/archives/mural-full.jpg",
+        "caption": "Traditional Tibetan Buddhist murals depicting the life of Buddha",
+        "metadata": {
+          "date": "16th century",
+          "material": "Natural pigments on wall",
+          "artist": "Unknown monastery artists"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Panchen Lama Festival",
+        "date": "2024-05-15",
+        "description": "Annual celebration honoring the Panchen Lama tradition"
+      }
+    ]
+  },
+  {
+    "id": "montecassino",
+    "name": "Monte Cassino Abbey",
+    "shortDescription": "Historic Benedictine monastery, mother house of the Benedictine order",
+    "fullDescription": "The Abbey of Monte Cassino is a rocky hill about 130 kilometres southeast of Rome, in the Latin Valley, Italy. Originally built in AD 529 by Benedict of Nursia, it has been destroyed and rebuilt multiple times throughout history.",
+    "yearFounded": 529,
+    "location": {
+      "lat": 41.4893,
+      "lng": 13.8136,
+      "address": "Via Montecassino, 03043 Cassino FR, Italy"
+    },
+    "images": {
+      "main": "/src/assets/monastery-christian.jpg",
+      "gallery": [
+        "/src/assets/monastery-christian.jpg"
+      ]
+    },
+    "panorama": {
+      "url": "/panoramas/montecassino-360.jpg",
+      "hotspots": [
+        {
+          "id": "basilica",
+          "pitch": 15,
+          "yaw": 0,
+          "type": "info",
+          "text": "Basilica - Rebuilt after WWII destruction, maintaining original Benedictine architecture"
+        },
+        {
+          "id": "crypt",
+          "pitch": -10,
+          "yaw": 180,
+          "type": "info",
+          "text": "Crypt of St. Benedict - Tomb of the founder of Western monasticism"
+        }
+      ]
+    },
+    "audioNarration": "/audio/montecassino-narration.mp3",
+    "archives": [
+      {
+        "id": "rule-benedict",
+        "title": "Rule of St. Benedict",
+        "type": "manuscript",
+        "thumbnail": "/archives/rule-thumb.jpg", 
+        "fullImage": "/archives/rule-full.jpg",
+        "caption": "Medieval copy of the Rule of St. Benedict, foundation of Western monasticism",
+        "metadata": {
+          "date": "12th century",
+          "material": "Parchment and illuminated text",
+          "language": "Latin"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Feast of St. Benedict",
+        "date": "2024-07-11",
+        "description": "Annual celebration of the patron saint of Europe"
+      }
+    ]
+  },
+  {
+    "id": "kanchipuram",
+    "name": "Kanchipuram Temple Complex",
+    "shortDescription": "Ancient Hindu temple complex and spiritual learning center",
+    "fullDescription": "Kanchipuram, known as the 'City of Thousand Temples', houses several ancient Hindu temple complexes that have served as centers of spiritual learning and monastic life for over a millennium.",
+    "yearFounded": 650,
+    "location": {
+      "lat": 12.8342,
+      "lng": 79.7036,
+      "address": "Kanchipuram, Tamil Nadu 631502, India"
+    },
+    "images": {
+      "main": "/src/assets/monastery-hindu.jpg",
+      "gallery": [
+        "/src/assets/monastery-hindu.jpg"
+      ]
+    },
+    "panorama": {
+      "url": "/panoramas/kanchipuram-360.jpg",
+      "hotspots": [
+        {
+          "id": "main-shrine",
+          "pitch": 20,
+          "yaw": 0,
+          "type": "info",
+          "text": "Main Shrine - Dedicated to Lord Vishnu, carved from single stone block"
+        },
+        {
+          "id": "meditation-hall",
+          "pitch": 0,
+          "yaw": -90,
+          "type": "info",
+          "text": "Meditation Hall - Where monks practice daily meditation and scriptural study"
+        }
+      ]
+    },
+    "audioNarration": "/audio/kanchipuram-narration.mp3",
+    "archives": [
+      {
+        "id": "palm-leaf",
+        "title": "Palm Leaf Manuscripts",
+        "type": "manuscript", 
+        "thumbnail": "/archives/palm-leaf-thumb.jpg",
+        "fullImage": "/archives/palm-leaf-full.jpg",
+        "caption": "Ancient Sanskrit texts inscribed on palm leaves",
+        "metadata": {
+          "date": "10th century",
+          "material": "Palm leaves and metal stylus",
+          "language": "Sanskrit"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Brahmotsavam Festival",
+        "date": "2024-04-20",
+        "description": "Grand annual festival celebrating divine presence"
+      }
+    ]
+  }
+]

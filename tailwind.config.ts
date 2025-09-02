@@ -61,7 +61,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				monastery: {
+					stone: 'hsl(var(--monastery-stone))',
+					wood: 'hsl(var(--monastery-wood))',
+					gold: 'hsl(var(--monastery-gold))',
+					sage: 'hsl(var(--monastery-sage))'
 				}
+			},
+			fontFamily: {
+				serif: ['Crimson Text', 'serif'],
+				sans: ['Inter', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
