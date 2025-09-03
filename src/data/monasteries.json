@@ -12,10 +12,11 @@
     },
     "images": {
       "main": "/src/assets/rumtek-monastery.jpg",
-      "gallery": [
-        "/src/assets/rumtek-monastery.jpg"
-      ]
+      "gallery": ["/src/assets/rumtek-monastery.jpg"]
     },
+    "visitCount": 15420,
+    "cleanlinessRating": 4.7,
+    "mostViewed": true,
     "panorama": {
       "url": "/panoramas/rumtek-360.jpg",
       "hotspots": [
@@ -25,20 +26,6 @@
           "yaw": 0,
           "type": "info",
           "text": "Main Temple - Four-storied temple with vibrant Tibetan Buddhist art and golden stupa"
-        },
-        {
-          "id": "courtyard",
-          "pitch": -5,
-          "yaw": 90,
-          "type": "info", 
-          "text": "Monastery Courtyard - Sacred space where ritual lama dances are performed during festivals"
-        },
-        {
-          "id": "monks-quarters",
-          "pitch": 0,
-          "yaw": -90,
-          "type": "info",
-          "text": "Monks' Quarters - Residential areas surrounding the temple complex"
         }
       ]
     },
@@ -56,19 +43,6 @@
           "material": "Gold, silver, precious stones",
           "significance": "Lineage transmission objects"
         }
-      },
-      {
-        "id": "thangka-paintings",
-        "title": "Traditional Thangka Paintings",
-        "type": "artwork",
-        "thumbnail": "/archives/thangka-thumb.jpg",
-        "fullImage": "/archives/thangka-full.jpg",
-        "caption": "Sacred Buddhist paintings depicting deities and mandalas",
-        "metadata": {
-          "date": "18th-19th century",
-          "material": "Natural pigments on silk",
-          "artist": "Tibetan master artists"
-        }
       }
     ],
     "culturalEvents": [
@@ -81,21 +55,6 @@
         "name": "Saga Dawa Festival",
         "date": "2025-06-11",
         "description": "Sacred month celebrating Buddha's birth, enlightenment, and parinirvana with special prayers and offerings"
-      },
-      {
-        "name": "Karmapa's Birthday Celebration",
-        "date": "2025-06-26",
-        "description": "Annual celebration honoring His Holiness the 17th Karmapa with teachings and ceremonies"
-      },
-      {
-        "name": "Guru Rinpoche Day",
-        "date": "2025-08-10",
-        "description": "Monthly celebration of Padmasambhava with special pujas and community feast"
-      },
-      {
-        "name": "Chokhor Duchen",
-        "date": "2025-08-24",
-        "description": "Festival commemorating Buddha's first teaching and turning of the Dharma wheel"
       }
     ]
   },
@@ -112,35 +71,14 @@
     },
     "images": {
       "main": "/src/assets/pemayangtse-monastery.jpg",
-      "gallery": [
-        "/src/assets/pemayangtse-monastery.jpg"
-      ]
+      "gallery": ["/src/assets/pemayangtse-monastery.jpg"]
     },
+    "visitCount": 12850,
+    "cleanlinessRating": 4.8,
+    "mostVisited": true,
     "panorama": {
       "url": "/panoramas/pemayangtse-360.jpg",
-      "hotspots": [
-        {
-          "id": "main-hall",
-          "pitch": 10,
-          "yaw": 0,
-          "type": "info",
-          "text": "Main Prayer Hall - Contains ancient Buddhist statues and murals from the 18th century"
-        },
-        {
-          "id": "wooden-sculpture",
-          "pitch": 20,
-          "yaw": 45,
-          "type": "info",
-          "text": "Seven-Tiered Sculpture - Intricate wooden carving of Guru Rinpoche's celestial palace"
-        },
-        {
-          "id": "kanchenjunga-view",
-          "pitch": -10,
-          "yaw": 180,
-          "type": "info",
-          "text": "Kanchenjunga View - Stunning panoramic view of the world's third highest peak"
-        }
-      ]
+      "hotspots": []
     },
     "audioNarration": "/audio/pemayangtse-narration.mp3",
     "archives": [
@@ -156,19 +94,6 @@
           "material": "Handmade paper and natural inks",
           "language": "Tibetan and Sanskrit"
         }
-      },
-      {
-        "id": "ritual-masks",
-        "title": "Sacred Cham Dance Masks",
-        "type": "artifact",
-        "thumbnail": "/archives/cham-masks-thumb.jpg",
-        "fullImage": "/archives/cham-masks-full.jpg",
-        "caption": "Traditional masks used in ritual Cham dances during Buddhist festivals",
-        "metadata": {
-          "date": "19th century",
-          "material": "Papier-mâché, natural pigments",
-          "significance": "Sacred dance performances"
-        }
       }
     ],
     "culturalEvents": [
@@ -181,21 +106,6 @@
         "name": "Guru Rinpoche Festival",
         "date": "2025-07-13",
         "description": "Grand celebration honoring Padmasambhava with special teachings, ceremonies, and community prayers"
-      },
-      {
-        "name": "Hemis Festival",
-        "date": "2025-06-29",
-        "description": "Spectacular festival celebrating Guru Padmasambhava's birth with masked dances and cultural performances"
-      },
-      {
-        "name": "Buddha Purnima",
-        "date": "2025-05-12",
-        "description": "Sacred day celebrating Buddha's birth, enlightenment, and parinirvana with special ceremonies"
-      },
-      {
-        "name": "Nyungne Retreat",
-        "date": "2025-03-20",
-        "description": "Two-day purification retreat with fasting, meditation, and compassion practices"
       }
     ]
   },
@@ -212,35 +122,14 @@
     },
     "images": {
       "main": "/src/assets/enchey-monastery.jpg",
-      "gallery": [
-        "/src/assets/enchey-monastery.jpg"
-      ]
+      "gallery": ["/src/assets/enchey-monastery.jpg"]
     },
+    "visitCount": 9240,
+    "cleanlinessRating": 4.6,
+    "mostViewed": false,
     "panorama": {
       "url": "/panoramas/enchey-360.jpg",
-      "hotspots": [
-        {
-          "id": "prayer-hall",
-          "pitch": 15,
-          "yaw": 0,
-          "type": "info",
-          "text": "Prayer Hall - Beautifully decorated with traditional Sikkimese and Tibetan Buddhist art"
-        },
-        {
-          "id": "gangtok-view",
-          "pitch": -20,
-          "yaw": -90,
-          "type": "info",
-          "text": "Gangtok City View - Panoramic overlook of Sikkim's capital city below"
-        },
-        {
-          "id": "prayer-wheels",
-          "pitch": 0,
-          "yaw": 90,
-          "type": "info",
-          "text": "Prayer Wheels - Traditional spinning wheels inscribed with mantras for devotional practice"
-        }
-      ]
+      "hotspots": []
     },
     "audioNarration": "/audio/enchey-narration.mp3",
     "archives": [
@@ -256,19 +145,6 @@
           "material": "Various sacred materials",
           "significance": "Founding tantric master's legacy"
         }
-      },
-      {
-        "id": "sikkim-paintings",
-        "title": "Traditional Sikkimese Art",
-        "type": "artwork",
-        "thumbnail": "/archives/sikkim-art-thumb.jpg",
-        "fullImage": "/archives/sikkim-art-full.jpg",
-        "caption": "Unique blend of Tibetan, Nepali, and local Sikkimese artistic traditions",
-        "metadata": {
-          "date": "Early 20th century",
-          "material": "Natural pigments on wall",
-          "artist": "Local Sikkimese artists"
-        }
       }
     ],
     "culturalEvents": [
@@ -281,26 +157,415 @@
         "name": "Bhumchu Festival",
         "date": "2025-02-24",
         "description": "Sacred water vessel ceremony with ancient prophecies and blessings for the coming year"
+      }
+    ]
+  },
+  {
+    "id": "tashiding",
+    "name": "Tashiding Monastery",
+    "shortDescription": "Sacred hilltop monastery with stunning Himalayan views",
+    "fullDescription": "Tashiding Monastery, built in 1717, is one of the most sacred monasteries in Sikkim. Perched on a hilltop between the Rathong and Rangit rivers, it offers panoramic views of the surrounding mountains. During the Bumchu festival, thousands of pilgrims gather here to witness the sacred water ceremony. The monastery is believed to wash away sins of those who visit with pure heart and devotion.",
+    "yearFounded": 1717,
+    "location": {
+      "lat": 27.3333,
+      "lng": 88.2833,
+      "address": "Tashiding, West Sikkim 737113, India"
+    },
+    "images": {
+      "main": "/src/assets/tashiding-monastery.jpg",
+      "gallery": ["/src/assets/tashiding-monastery.jpg"]
+    },
+    "visitCount": 8650,
+    "cleanlinessRating": 4.9,
+    "cleanest": true,
+    "panorama": {
+      "url": "/panoramas/tashiding-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/tashiding-narration.mp3",
+    "archives": [
+      {
+        "id": "bumchu-artifacts",
+        "title": "Sacred Bumchu Vessel",
+        "type": "artifact",
+        "thumbnail": "/archives/bumchu-vessel-thumb.jpg",
+        "fullImage": "/archives/bumchu-vessel-full.jpg",
+        "caption": "Ancient sacred vessel used in the Bumchu ceremony",
+        "metadata": {
+          "date": "18th century",
+          "material": "Consecrated bronze",
+          "significance": "Annual water level prophecy"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Bumchu Festival",
+        "date": "2025-02-24",
+        "description": "Sacred water ceremony with ancient prophecies and spiritual cleansing"
       },
       {
-        "name": "Drupka Teshi",
-        "date": "2025-08-04",
-        "description": "Festival celebrating Buddha's first teaching with special prayers and community gatherings"
+        "name": "Buddha Jayanti",
+        "date": "2025-05-12",
+        "description": "Celebration of Buddha's birth with special prayers and community feast"
+      }
+    ]
+  },
+  {
+    "id": "dubdi",
+    "name": "Dubdi Monastery",
+    "shortDescription": "Oldest monastery in Sikkim, founded in 1701",
+    "fullDescription": "Dubdi Monastery, meaning 'the retreat', is the oldest monastery in Sikkim, built in 1701. Founded by Lhatsun Namkha Jigme, one of the three venerated lamas who consecrated the first Chogyal of Sikkim. Located near Yuksom, the ancient capital, it sits peacefully amidst dense forests and offers insights into Sikkim's earliest Buddhist traditions and the foundation of the kingdom.",
+    "yearFounded": 1701,
+    "location": {
+      "lat": 27.3667,
+      "lng": 88.2167,
+      "address": "Yuksom, West Sikkim 737113, India"
+    },
+    "images": {
+      "main": "/src/assets/dubdi-monastery.jpg",
+      "gallery": ["/src/assets/dubdi-monastery.jpg"]
+    },
+    "visitCount": 6420,
+    "cleanlinessRating": 4.5,
+    "historical": true,
+    "panorama": {
+      "url": "/panoramas/dubdi-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/dubdi-narration.mp3",
+    "archives": [
+      {
+        "id": "founding-artifacts",
+        "title": "Founding Lama Artifacts",
+        "type": "artifact",
+        "thumbnail": "/archives/founding-lama-thumb.jpg",
+        "fullImage": "/archives/founding-lama-full.jpg",
+        "caption": "Sacred objects from Lhatsun Namkha Jigme, one of the three venerated lamas",
+        "metadata": {
+          "date": "Early 18th century",
+          "material": "Bronze, silver, precious stones",
+          "significance": "Kingdom foundation relics"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Sangachoeling Festival",
+        "date": "2025-03-15",
+        "description": "Annual festival commemorating the monastery's founding with traditional ceremonies"
       },
       {
-        "name": "Tendong Lho Rum Faat",
-        "date": "2025-08-15",
-        "description": "Unique Sikkimese festival celebrating the sacred mountain Tendong with cultural performances"
+        "name": "Drukpa Kunley Day",
+        "date": "2025-08-18",
+        "description": "Celebration honoring the divine madman saint with special prayers"
+      }
+    ]
+  },
+  {
+    "id": "labrang",
+    "name": "Labrang Monastery",
+    "shortDescription": "Beautiful monastery near Gangtok with traditional architecture",
+    "fullDescription": "Labrang Monastery, established in 1814, is located on a ridge above Gangtok. Built in traditional Tibetan architectural style, it houses several sacred statues and manuscripts. The monastery is known for its peaceful environment and serves as an important center for Buddhist learning and meditation practices in the region.",
+    "yearFounded": 1814,
+    "location": {
+      "lat": 27.4181,
+      "lng": 88.5794,
+      "address": "Near Gangtok, East Sikkim 737101, India"
+    },
+    "images": {
+      "main": "/src/assets/labrang-monastery.jpg",
+      "gallery": ["/src/assets/labrang-monastery.jpg"]
+    },
+    "visitCount": 7830,
+    "cleanlinessRating": 4.4,
+    "peaceful": true,
+    "panorama": {
+      "url": "/panoramas/labrang-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/labrang-narration.mp3",
+    "archives": [
+      {
+        "id": "meditation-texts",
+        "title": "Meditation Practice Manuscripts",
+        "type": "manuscript",
+        "thumbnail": "/archives/meditation-texts-thumb.jpg",
+        "fullImage": "/archives/meditation-texts-full.jpg",
+        "caption": "Ancient texts on Buddhist meditation practices and philosophy",
+        "metadata": {
+          "date": "19th century",
+          "material": "Handmade paper",
+          "language": "Tibetan"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Meditation Retreat Festival",
+        "date": "2025-04-20",
+        "description": "Annual retreat focusing on Buddhist meditation practices and teachings"
       },
       {
-        "name": "Dussehra Celebration",
-        "date": "2025-10-02",
-        "description": "Ten-day festival celebrating the victory of good over evil with special Buddhist ceremonies"
+        "name": "Tara Puja Celebration",
+        "date": "2025-09-25",
+        "description": "Special prayers dedicated to Goddess Tara with community participation"
+      }
+    ]
+  },
+  {
+    "id": "sanga-choeling",
+    "name": "Sanga Choeling Monastery",
+    "shortDescription": "Second oldest monastery in Sikkim with panoramic mountain views",
+    "fullDescription": "Sanga Choeling Monastery, built in 1697, is the second oldest monastery in Sikkim. Located on a ridge top near Pelling, it offers spectacular views of the Kanchenjunga range. The monastery was founded by Lama Lhatsun Chempo and is known for its ancient murals and statues. Despite being partially in ruins, it remains an important pilgrimage site.",
+    "yearFounded": 1697,
+    "location": {
+      "lat": 27.3111,
+      "lng": 88.2444,
+      "address": "Pelling, West Sikkim 737113, India"
+    },
+    "images": {
+      "main": "/src/assets/sanga-choeling-monastery.jpg",
+      "gallery": ["/src/assets/sanga-choeling-monastery.jpg"]
+    },
+    "visitCount": 5940,
+    "cleanlinessRating": 4.3,
+    "historical": true,
+    "panorama": {
+      "url": "/panoramas/sanga-choeling-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/sanga-choeling-narration.mp3",
+    "archives": [
+      {
+        "id": "ancient-murals",
+        "title": "Ancient Wall Murals",
+        "type": "artwork",
+        "thumbnail": "/archives/ancient-murals-thumb.jpg",
+        "fullImage": "/archives/ancient-murals-full.jpg",
+        "caption": "17th century Buddhist murals depicting various deities and teachings",
+        "metadata": {
+          "date": "Late 17th century",
+          "material": "Natural pigments on stone",
+          "artist": "Tibetan master artists"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Heritage Preservation Day",
+        "date": "2025-05-30",
+        "description": "Annual event focusing on preserving the monastery's ancient heritage and artifacts"
       },
       {
-        "name": "Winter Solstice Prayer",
-        "date": "2025-12-21",
-        "description": "Sacred prayers for light and renewal during the longest night of the year"
+        "name": "Kanchenjunga Worship",
+        "date": "2025-10-15",
+        "description": "Special prayers dedicated to the sacred mountain Kanchenjunga"
+      }
+    ]
+  },
+  {
+    "id": "ralang",
+    "name": "Ralang Monastery",
+    "shortDescription": "Important Kagyu monastery with rich cultural traditions",
+    "fullDescription": "Ralang Monastery, established in 1768, is one of the most important monasteries of the Kagyu sect in Sikkim. Located in Ralang village, it was built by the fourth Chogyal Tenzin Namgyal. The monastery is famous for its annual Pang Lhabsol festival and houses several precious relics and thangka paintings. It plays a crucial role in preserving Sikkimese Buddhist culture.",
+    "yearFounded": 1768,
+    "location": {
+      "lat": 27.2333,
+      "lng": 88.5167,
+      "address": "Ralang, South Sikkim 737111, India"
+    },
+    "images": {
+      "main": "/src/assets/ralang-monastery.jpg",
+      "gallery": ["/src/assets/ralang-monastery.jpg"]
+    },
+    "visitCount": 8240,
+    "cleanlinessRating": 4.6,
+    "cultural": true,
+    "panorama": {
+      "url": "/panoramas/ralang-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/ralang-narration.mp3",
+    "archives": [
+      {
+        "id": "royal-thangkas",
+        "title": "Royal Thangka Collection",
+        "type": "artwork",
+        "thumbnail": "/archives/royal-thangkas-thumb.jpg",
+        "fullImage": "/archives/royal-thangkas-full.jpg",
+        "caption": "Precious thangka paintings commissioned by the Sikkimese royal family",
+        "metadata": {
+          "date": "18th-19th century",
+          "material": "Silk and gold thread",
+          "artist": "Royal court artists"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Pang Lhabsol Festival",
+        "date": "2025-09-07",
+        "description": "Major festival honoring Mount Kanchenjunga with traditional masked dances"
+      },
+      {
+        "name": "Thangka Exhibition",
+        "date": "2025-11-12",
+        "description": "Annual display of the monastery's precious thangka painting collection"
+      }
+    ]
+  },
+  {
+    "id": "khecheopalri",
+    "name": "Khecheopalri Monastery",
+    "shortDescription": "Sacred monastery near the wish-fulfilling lake",
+    "fullDescription": "Khecheopalri Monastery is located near the sacred Khecheopalri Lake, considered one of the most sacred lakes in Sikkim. The monastery, surrounded by dense forests, serves as a guardian of the holy lake. Pilgrims visit to make wishes at the lake and seek blessings at the monastery. The area is known for its pristine natural beauty and spiritual significance.",
+    "yearFounded": 1850,
+    "location": {
+      "lat": 27.3472,
+      "lng": 88.2069,
+      "address": "Khecheopalri, West Sikkim 737113, India"
+    },
+    "images": {
+      "main": "/src/assets/khecheopalri-monastery.jpg",
+      "gallery": ["/src/assets/khecheopalri-monastery.jpg"]
+    },
+    "visitCount": 11200,
+    "cleanlinessRating": 4.8,
+    "cleanest": true,
+    "panorama": {
+      "url": "/panoramas/khecheopalri-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/khecheopalri-narration.mp3",
+    "archives": [
+      {
+        "id": "lake-legends",
+        "title": "Sacred Lake Legends",
+        "type": "manuscript",
+        "thumbnail": "/archives/lake-legends-thumb.jpg",
+        "fullImage": "/archives/lake-legends-full.jpg",
+        "caption": "Ancient texts describing the legends and spiritual significance of Khecheopalri Lake",
+        "metadata": {
+          "date": "19th century",
+          "material": "Traditional paper",
+          "language": "Tibetan and Lepcha"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Lake Purification Ceremony",
+        "date": "2025-04-15",
+        "description": "Annual ceremony to maintain the spiritual purity of the sacred lake"
+      },
+      {
+        "name": "Wish Fulfillment Festival",
+        "date": "2025-08-28",
+        "description": "Special prayers and rituals for devotees to make wishes at the sacred lake"
+      }
+    ]
+  },
+  {
+    "id": "tsuklakhang",
+    "name": "Tsuklakhang Palace Monastery",
+    "shortDescription": "Royal monastery and palace complex in Gangtok",
+    "fullDescription": "Tsuklakhang Palace Monastery, built in 1894, served as the royal chapel of the Sikkimese monarchy. Located in the heart of Gangtok, it houses a rich collection of Buddhist scriptures, statues, and artifacts. The monastery combines traditional Tibetan architecture with royal elegance and continues to be an important center for Buddhist ceremonies and state functions.",
+    "yearFounded": 1894,
+    "location": {
+      "lat": 27.3389,
+      "lng": 88.6138,
+      "address": "Palace Complex, Gangtok, East Sikkim 737101, India"
+    },
+    "images": {
+      "main": "/src/assets/tsuklakhang-monastery.jpg",
+      "gallery": ["/src/assets/tsuklakhang-monastery.jpg"]
+    },
+    "visitCount": 13750,
+    "cleanlinessRating": 4.7,
+    "royal": true,
+    "panorama": {
+      "url": "/panoramas/tsuklakhang-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/tsuklakhang-narration.mp3",
+    "archives": [
+      {
+        "id": "royal-artifacts",
+        "title": "Royal Family Artifacts",
+        "type": "artifact",
+        "thumbnail": "/archives/royal-artifacts-thumb.jpg",
+        "fullImage": "/archives/royal-artifacts-full.jpg",
+        "caption": "Sacred objects and regalia of the Sikkimese royal family",
+        "metadata": {
+          "date": "19th-20th century",
+          "material": "Gold, silver, precious gems",
+          "significance": "Royal ceremonial objects"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Royal Heritage Festival",
+        "date": "2025-06-08",
+        "description": "Annual celebration of Sikkimese royal heritage with cultural performances"
+      },
+      {
+        "name": "State Prayer Ceremony",
+        "date": "2025-12-05",
+        "description": "Official state prayers for the prosperity and peace of Sikkim"
+      }
+    ]
+  },
+  {
+    "id": "lingdum",
+    "name": "Lingdum Monastery",
+    "shortDescription": "Modern monastery with traditional architecture and panoramic views",
+    "fullDescription": "Lingdum Monastery, also known as Ranka Monastery, was established in 1998. Despite being relatively new, it follows traditional Tibetan Buddhist architecture and practices. Located about 17 km from Gangtok, it offers stunning views of the surrounding valleys and mountains. The monastery is known for its peaceful environment and well-maintained gardens.",
+    "yearFounded": 1998,
+    "location": {
+      "lat": 27.2667,
+      "lng": 88.6333,
+      "address": "Ranka, East Sikkim 737135, India"
+    },
+    "images": {
+      "main": "/src/assets/lingdum-monastery.jpg",
+      "gallery": ["/src/assets/lingdum-monastery.jpg"]
+    },
+    "visitCount": 9680,
+    "cleanlinessRating": 4.9,
+    "modern": true,
+    "cleanest": true,
+    "panorama": {
+      "url": "/panoramas/lingdum-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/lingdum-narration.mp3",
+    "archives": [
+      {
+        "id": "modern-art",
+        "title": "Contemporary Buddhist Art",
+        "type": "artwork",
+        "thumbnail": "/archives/modern-art-thumb.jpg",
+        "fullImage": "/archives/modern-art-full.jpg",
+        "caption": "Modern interpretations of traditional Buddhist themes by contemporary artists",
+        "metadata": {
+          "date": "Late 20th century",
+          "material": "Acrylic on canvas",
+          "artist": "Contemporary Sikkimese artists"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Modern Buddhism Seminar",
+        "date": "2025-07-22",
+        "description": "Educational event discussing Buddhism's relevance in contemporary society"
+      },
+      {
+        "name": "Garden Festival",
+        "date": "2025-10-08",
+        "description": "Celebration of the monastery's beautiful gardens with flower exhibitions"
       }
     ]
   }

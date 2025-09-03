@@ -1,100 +1,184 @@
-import { useState, useEffect } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { useState, useMemo } from "react";
 import { Input } from "@/components/ui/input";
-import { Search, Filter, MapPin } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
+import { Search, MapPin, Calendar, Users, Filter, Eye, Sparkles, TrendingUp } from "lucide-react";
 import MonasteryCard from "@/components/MonasteryCard";
+import { LeafletMap } from "@/components/LeafletMap";
 import monastariesData from "@/data/monasteries.json";
 
 const MapPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredMonasteries, setFilteredMonasteries] = useState(monastariesData);
+  const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
+  const [selectedMonastery, setSelectedMonastery] = useState<any>(null);
 
-  useEffect(() => {
-    const filtered = monastariesData.filter(monastery =>
-      monastery.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      monastery.shortDescription.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      monastery.location.address.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredMonasteries = useMemo(() => {
+    return monastariesData.filter((monastery) => {
+      const matchesSearch = monastery.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                           monastery.shortDescription.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                           monastery.location.address.toLowerCase().includes(searchTerm.toLowerCase());
+      
+      const matchesFilters = selectedFilters.length === 0 || 
+                            selectedFilters.some(filter => {
+                              switch (filter) {
+                                case "nyingma":
+                                  return monastery.shortDescription.toLowerCase().includes("nyingma");
+                                case "kagyu":
+                                  return monastery.shortDescription.toLowerCase().includes("kagyu") || 
+                                         monastery.shortDescription.toLowerCase().includes("karma kagyu");
+                                case "ancient":
+                                  return monastery.yearFounded < 1800;
+                                case "modern":
+                                  return monastery.yearFounded > 1900;
+                                case "most-viewed":
+                                  return monastery.mostViewed;
+                                case "most-visited":
+                                  return monastery.mostVisited || monastery.visitCount > 12000;
+                                case "cleanest":
+                                  return monastery.cleanest || monastery.cleanlinessRating >= 4.8;
+                                default:
+                                  return true;
+                              }
+                            });
+      
+      return matchesSearch && matchesFilters;
+    });
+  }, [searchTerm, selectedFilters]);
+
+  const toggleFilter = (filter: string) => {
+    setSelectedFilters(prev => 
+      prev.includes(filter) 
+        ? prev.filter(f => f !== filter)
+        : [...prev, filter]
     );
-    setFilteredMonasteries(filtered);
-  }, [searchTerm]);
+  };
+
+  const filters = [
+    { id: "nyingma", label: "Nyingma School", count: monastariesData.filter(m => m.shortDescription.toLowerCase().includes("nyingma")).length },
+    { id: "kagyu", label: "Kagyu School", count: monastariesData.filter(m => m.shortDescription.toLowerCase().includes("kagyu")).length },
+    { id: "ancient", label: "Ancient (Pre-1800)", count: monastariesData.filter(m => m.yearFounded < 1800).length },
+    { id: "modern", label: "Modern (Post-1900)", count: monastariesData.filter(m => m.yearFounded > 1900).length },
+    { id: "most-viewed", label: "Most Viewed", count: monastariesData.filter(m => m.mostViewed).length, icon: Eye },
+    { id: "most-visited", label: "Most Visited", count: monastariesData.filter(m => m.mostVisited || m.visitCount > 12000).length, icon: TrendingUp },
+    { id: "cleanest", label: "Cleanest Places", count: monastariesData.filter(m => m.cleanest || m.cleanlinessRating >= 4.8).length, icon: Sparkles },
+  ];
+
+  const handleMarkerClick = (monastery: any) => {
+    setSelectedMonastery(monastery);
+  };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-monastery-stone/20 to-background">
+    <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8">
-        <div className="grid lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 h-[calc(100vh-6rem)]">
           {/* Sidebar */}
           <div className="lg:col-span-1 space-y-6">
-            <Card className="monastery-card">
-              <CardContent className="p-6">
-                <h2 className="text-xl font-serif font-bold mb-4 text-primary">
-                  Find Monasteries
-                </h2>
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Search className="h-5 w-5" />
+                  Search Monasteries
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <Input
+                  placeholder="Search by name, description, or location..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full"
+                />
                 
-                <div className="space-y-4">
-                  <div className="relative">
-                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-                    <Input
-                      placeholder="Search monasteries..."
-                      value={searchTerm}
-                      onChange={(e) => setSearchTerm(e.target.value)}
-                      className="pl-10 font-serif"
-                    />
-                  </div>
-                  
-                  <Button variant="stone" size="sm" className="w-full">
-                    <Filter className="w-4 h-4" />
+                <Separator />
+                
+                <div className="space-y-3">
+                  <h3 className="font-medium flex items-center gap-2">
+                    <Filter className="h-4 w-4" />
                     Filters
-                  </Button>
-                </div>
-
-                <div className="mt-6 pt-6 border-t border-border">
-                  <h3 className="font-serif font-semibold mb-3 text-primary">
-                    Found {filteredMonasteries.length} monasteries
                   </h3>
-                  <div className="space-y-2">
-                    {filteredMonasteries.map((monastery) => (
-                      <div key={monastery.id} className="flex items-center space-x-2 p-2 rounded hover:bg-accent/50 transition-colors cursor-pointer">
-                        <MapPin className="w-3 h-3 text-muted-foreground" />
-                        <span className="text-sm font-serif">{monastery.name}</span>
-                      </div>
-                    ))}
+                  
+                  <div className="grid grid-cols-1 gap-2">
+                    {filters.map((filter) => {
+                      const Icon = filter.icon;
+                      return (
+                        <Button
+                          key={filter.id}
+                          variant={selectedFilters.includes(filter.id) ? "default" : "outline"}
+                          size="sm"
+                          onClick={() => toggleFilter(filter.id)}
+                          className="justify-between"
+                        >
+                          <span className="flex items-center gap-2">
+                            {Icon && <Icon className="h-3 w-3" />}
+                            {filter.label}
+                          </span>
+                          <Badge variant="secondary" className="ml-2">
+                            {filter.count}
+                          </Badge>
+                        </Button>
+                      );
+                    })}
                   </div>
                 </div>
+                
+                <Separator />
+                
+                <div className="space-y-2">
+                  <h3 className="font-medium">Quick Stats</h3>
+                  <div className="grid grid-cols-2 gap-4 text-sm">
+                    <div className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4 text-primary" />
+                      <span>{monastariesData.length} Monasteries</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Calendar className="h-4 w-4 text-primary" />
+                      <span>Cultural Events</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Users className="h-4 w-4 text-primary" />
+                      <span>Virtual Tours</span>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            {/* Results */}
+            <Card className="flex-1">
+              <CardHeader>
+                <CardTitle>
+                  Monasteries ({filteredMonasteries.length})
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4 max-h-[400px] overflow-y-auto">
+                {filteredMonasteries.map((monastery) => (
+                  <MonasteryCard key={monastery.id} monastery={monastery} />
+                ))}
+                
+                {filteredMonasteries.length === 0 && (
+                  <div className="text-center py-8 text-muted-foreground">
+                    <MapPin className="h-12 w-12 mx-auto mb-4 opacity-50" />
+                    <p>No monasteries found matching your criteria.</p>
+                    <p className="text-sm">Try adjusting your search or filters.</p>
+                  </div>
+                )}
               </CardContent>
             </Card>
           </div>
 
-          {/* Main Content */}
-          <div className="lg:col-span-3">
-            {/* Map Placeholder */}
-            <Card className="monastery-card mb-8">
-              <CardContent className="p-0">
-                <div className="h-96 bg-monastery-stone/30 rounded-lg flex items-center justify-center border-2 border-dashed border-monastery-wood/30">
-                  <div className="text-center">
-                    <MapPin className="w-16 h-16 text-monastery-wood mx-auto mb-4" />
-                    <h3 className="text-xl font-serif font-bold text-monastery-wood mb-2">
-                      Interactive Map
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Google Maps integration will display monastery locations here
-                    </p>
-                  </div>
+          {/* Map Area */}
+          <div className="lg:col-span-2">
+            <Card className="h-full">
+              <CardContent className="p-6 h-full">
+                <div className="h-full rounded-lg overflow-hidden">
+                  <LeafletMap 
+                    monasteries={filteredMonasteries} 
+                    onMarkerClick={handleMarkerClick}
+                  />
                 </div>
               </CardContent>
             </Card>
-
-            {/* Monastery Grid */}
-            <div>
-              <h2 className="text-2xl font-serif font-bold mb-6 text-primary">
-                Featured Monasteries
-              </h2>
-              <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-                {filteredMonasteries.map((monastery) => (
-                  <MonasteryCard key={monastery.id} monastery={monastery} />
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </div>
