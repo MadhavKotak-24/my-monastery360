@@ -1,5 +1,5 @@
 // Weather API integration for monastery locations
-const WEATHER_API_KEY = 'your-weather-api-key' // In production, use environment variables
+const WEATHER_API_KEY = '' // No API key for demo
 
 export interface WeatherData {
   temperature: number
@@ -11,37 +11,17 @@ export interface WeatherData {
 }
 
 export const fetchWeatherData = async (lat: number, lng: number): Promise<WeatherData | null> => {
-  try {
-    // Using OpenWeatherMap API (free tier)
-    const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${WEATHER_API_KEY}&units=metric`
-    )
-    
-    if (!response.ok) {
-      throw new Error('Weather data not available')
-    }
-    
-    const data = await response.json()
-    
-    return {
-      temperature: Math.round(data.main.temp),
-      condition: data.weather[0].main,
-      humidity: data.main.humidity,
-      visibility: data.visibility ? Math.round(data.visibility / 1000) : 10,
-      windSpeed: Math.round(data.wind.speed * 3.6), // Convert m/s to km/h
-      location: data.name
-    }
-  } catch (error) {
-    console.error('Error fetching weather data:', error)
-    // Return mock weather data for demo purposes
-    return {
-      temperature: 18,
-      condition: 'Clear',
-      humidity: 65,
-      visibility: 15,
-      windSpeed: 12,
-      location: 'Sikkim'
-    }
+  // Skip API call since no key provided, return mock data directly
+  const mockWeatherConditions = ['Clear', 'Clouds', 'Mist', 'Fog']
+  const randomCondition = mockWeatherConditions[Math.floor(Math.random() * mockWeatherConditions.length)]
+  
+  return {
+    temperature: Math.floor(Math.random() * 15) + 10, // 10-25°C
+    condition: randomCondition,
+    humidity: Math.floor(Math.random() * 30) + 50, // 50-80%
+    visibility: Math.floor(Math.random() * 10) + 10, // 10-20 km
+    windSpeed: Math.floor(Math.random() * 20) + 5, // 5-25 km/h
+    location: 'Sikkim'
   }
 }
 
