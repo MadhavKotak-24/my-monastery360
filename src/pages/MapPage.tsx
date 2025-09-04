@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Search, MapPin, Calendar, Users, Filter, Eye, Sparkles, TrendingUp } from "lucide-react";
 import MonasteryCard from "@/components/MonasteryCard";
-import { LeafletMap } from "@/components/LeafletMap";
+import LeafletMap from "@/components/LeafletMap";
 import monastariesData from "@/data/monasteries.json";
 
 const MapPage = () => {

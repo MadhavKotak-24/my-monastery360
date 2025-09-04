@@ -40,7 +40,7 @@ interface LeafletMapProps {
   onMarkerClick?: (monastery: Monastery) => void
 }
 
-export const LeafletMap = ({ monasteries, onMarkerClick }: LeafletMapProps) => {
+const LeafletMap = ({ monasteries, onMarkerClick }: LeafletMapProps) => {
   const [weather, setWeather] = useState<Record<string, WeatherData>>({})
   const [selectedMonastery, setSelectedMonastery] = useState<Monastery | null>(null)
 
@@ -171,3 +171,5 @@ export const LeafletMap = ({ monasteries, onMarkerClick }: LeafletMapProps) => {
     </div>
   )
 }
+
+export default LeafletMap
