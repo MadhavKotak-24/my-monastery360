@@ -11,27 +11,35 @@ import {
   Archive, 
   Image as ImageIcon,
   FileText,
-  Eye
+  Eye,
+  Volume2
 } from "lucide-react";
 import monastariesData from "@/data/monasteries.json";
+import PanoramaViewer from "@/components/PanoramaViewer";
+import ArchiveModal from "@/components/ArchiveModal";
+import monastery360Interior from "@/assets/monastery-360-interior.jpg";
+import monastery360Exterior from "@/assets/monastery-360-exterior.jpg";
 
 interface ArchiveItem {
   id: string;
   title: string;
-  type: string;
+  type: 'manuscript' | 'mural' | 'artifact' | 'photograph';
   thumbnail: string;
+  fullImage: string;
   caption: string;
   metadata: {
     date: string;
     material: string;
     language?: string;
     artist?: string;
+    location?: string;
   };
 }
 
 const MonasteryDetail = () => {
   const { id } = useParams();
   const [selectedArchive, setSelectedArchive] = useState<ArchiveItem | null>(null);
+  const [currentPanorama, setCurrentPanorama] = useState<'interior' | 'exterior'>('interior');
   
   const monastery = monastariesData.find(m => m.id === id);
 
@@ -73,27 +81,61 @@ const MonasteryDetail = () => {
             {/* 360° Viewer */}
             <Card className="monastery-card">
               <CardHeader>
-                <CardTitle className="flex items-center space-x-2 font-serif">
-                  <Eye className="w-5 h-5" />
-                  <span>360° Virtual Tour</span>
+                <CardTitle className="flex items-center justify-between font-serif">
+                  <div className="flex items-center space-x-2">
+                    <Eye className="w-5 h-5" />
+                    <span>360° Virtual Tour</span>
+                  </div>
+                  <div className="flex gap-2">
+                    <Button 
+                      size="sm" 
+                      variant={currentPanorama === 'interior' ? 'default' : 'outline'}
+                      onClick={() => setCurrentPanorama('interior')}
+                    >
+                      Interior
+                    </Button>
+                    <Button 
+                      size="sm" 
+                      variant={currentPanorama === 'exterior' ? 'default' : 'outline'}
+                      onClick={() => setCurrentPanorama('exterior')}
+                    >
+                      Exterior
+                    </Button>
+                  </div>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="aspect-video bg-monastery-stone/30 rounded-lg flex items-center justify-center border-2 border-dashed border-monastery-wood/30">
-                  <div className="text-center">
-                    <Eye className="w-16 h-16 text-monastery-wood mx-auto mb-4" />
-                    <h3 className="text-xl font-serif font-bold text-monastery-wood mb-2">
-                      360° Panoramic View
-                    </h3>
-                    <p className="text-muted-foreground mb-4">
-                      PhotoSphere viewer will be integrated here
-                    </p>
-                    <Button variant="monastery">
-                      <Play className="w-4 h-4" />
-                      Start Virtual Tour
-                    </Button>
-                  </div>
-                </div>
+                <PanoramaViewer
+                  panoramaUrl={currentPanorama === 'interior' ? monastery360Interior : monastery360Exterior}
+                  title={`${monastery.name} - ${currentPanorama} view`}
+                  className="h-96"
+                  hotspots={[
+                    {
+                      id: '1',
+                      x: 25,
+                      y: 40,
+                      title: 'Main Buddha Statue',
+                      content: 'The central Buddha statue carved from a single piece of marble',
+                      type: 'info'
+                    },
+                    {
+                      id: '2', 
+                      x: 70,
+                      y: 30,
+                      title: 'Prayer Wheels',
+                      content: 'Traditional Tibetan prayer wheels containing sacred mantras',
+                      type: 'info'
+                    },
+                    {
+                      id: '3',
+                      x: 50,
+                      y: 20,
+                      title: 'Ancient Murals',
+                      content: 'Historic wall paintings depicting Buddhist teachings',
+                      type: 'image'
+                    }
+                  ]}
+                />
               </CardContent>
             </Card>
 
@@ -167,7 +209,7 @@ const MonasteryDetail = () => {
                   Audio Guide
                 </h3>
                 <Button variant="sacred" className="w-full">
-                  <Play className="w-4 h-4" />
+                  <Volume2 className="w-4 h-4 mr-2" />
                   Play Narration
                 </Button>
               </CardContent>
@@ -223,50 +265,22 @@ const MonasteryDetail = () => {
       </div>
 
       {/* Archive Modal */}
-      {selectedArchive && (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
-          <Card className="monastery-card max-w-2xl w-full max-h-[90vh] overflow-auto">
-            <CardHeader className="pb-4">
-              <div className="flex items-center justify-between">
-                <CardTitle className="font-serif">{selectedArchive.title}</CardTitle>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => setSelectedArchive(null)}
-                >
-                  ×
-                </Button>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <div className="aspect-video bg-monastery-stone/30 rounded-lg flex items-center justify-center">
-                  <ImageIcon className="w-16 h-16 text-monastery-wood" />
-                </div>
-                <p className="text-muted-foreground">{selectedArchive.caption}</p>
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div>
-                    <span className="font-semibold">Date:</span> {selectedArchive.metadata.date}
-                  </div>
-                  <div>
-                    <span className="font-semibold">Material:</span> {selectedArchive.metadata.material}
-                  </div>
-                  {selectedArchive.metadata.language && (
-                    <div className="col-span-2">
-                      <span className="font-semibold">Language:</span> {selectedArchive.metadata.language}
-                    </div>
-                  )}
-                  {selectedArchive.metadata.artist && (
-                    <div className="col-span-2">
-                      <span className="font-semibold">Artist:</span> {selectedArchive.metadata.artist}
-                    </div>
-                  )}
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      )}
+      <ArchiveModal 
+        isOpen={!!selectedArchive}
+        onClose={() => setSelectedArchive(null)}
+        item={selectedArchive ? {
+          ...selectedArchive,
+          fullImage: selectedArchive.thumbnail,
+          type: selectedArchive.type as 'manuscript' | 'mural' | 'artifact' | 'photograph',
+          metadata: {
+            date: selectedArchive.metadata.date,
+            material: selectedArchive.metadata.material,
+            language: selectedArchive.metadata.language || 'Tibetan',
+            artist: selectedArchive.metadata.artist,
+            location: monastery.location.address
+          }
+        } : null}
+      />
     </div>
   );
 };
