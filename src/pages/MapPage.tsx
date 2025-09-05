@@ -6,8 +6,8 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Search, MapPin, Calendar, Users, Filter, Eye, Sparkles, TrendingUp } from "lucide-react";
 import MonasteryCard from "@/components/MonasteryCard";
-import GoogleMap from "@/components/GoogleMap";
-import monastariesData from "@/data/monasteries.json";
+import MapboxMap from "@/components/MapboxMap";
+import monastariesData from "@/data/updatedMonasteries.json";
 
 const MapPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -172,7 +172,7 @@ const MapPage = () => {
             <Card className="h-full">
               <CardContent className="p-6 h-full">
                 <div className="h-full rounded-lg overflow-hidden">
-                  <GoogleMap 
+                  <MapboxMap 
                     monasteries={filteredMonasteries} 
                     onMarkerClick={handleMarkerClick}
                   />

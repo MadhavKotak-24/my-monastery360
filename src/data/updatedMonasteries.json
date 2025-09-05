@@ -1,0 +1,571 @@
+[
+  {
+    "id": "rumtek",
+    "name": "Rumtek Monastery",
+    "shortDescription": "Largest monastery in Sikkim, seat of the Karma Kagyu lineage",
+    "fullDescription": "Rumtek Monastery, also known as the Dharma Chakra Centre, is the largest monastery in Sikkim and the main seat of the Karma Kagyu lineage outside Tibet. Originally built in the 1740s by Changchub Dorje, the 12th Karmapa, it was rebuilt in the 1960s by the 16th Karmapa. Located 24 km from Gangtok, it sits majestically at 5,500 feet above sea level and is renowned for its golden stupa and sacred relics.",
+    "yearFounded": 1740,
+    "location": {
+      "lat": 27.2886,
+      "lng": 88.5617,
+      "address": "Rumtek, East Sikkim 737135, India"
+    },
+    "images": {
+      "main": "/src/assets/rumtek-monastery.jpg",
+      "gallery": ["/src/assets/rumtek-monastery.jpg"]
+    },
+    "visitCount": 15420,
+    "cleanlinessRating": 4.7,
+    "mostViewed": true,
+    "panorama": {
+      "url": "/panoramas/rumtek-360.jpg",
+      "hotspots": [
+        {
+          "id": "main-temple",
+          "pitch": 15,
+          "yaw": 0,
+          "type": "info",
+          "text": "Main Temple - Four-storied temple with vibrant Tibetan Buddhist art and golden stupa"
+        }
+      ]
+    },
+    "audioNarration": "/audio/rumtek-narration.mp3",
+    "archives": [
+      {
+        "id": "karmapa-relics",
+        "title": "Sacred Relics of the Karmapas",
+        "type": "artifact",
+        "thumbnail": "/archives/karmapa-relics-thumb.jpg",
+        "fullImage": "/archives/karmapa-relics-full.jpg",
+        "caption": "Precious relics and ritual objects of the Karmapa lineage",
+        "metadata": {
+          "date": "16th-20th century",
+          "material": "Gold, silver, precious stones",
+          "significance": "Lineage transmission objects"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Losar (Tibetan New Year)",
+        "date": "2025-02-28",
+        "description": "Three-day celebration marking the Tibetan New Year with prayers, dances, and festivities"
+      },
+      {
+        "name": "Saga Dawa Festival",
+        "date": "2025-06-11",
+        "description": "Sacred month celebrating Buddha's birth, enlightenment, and parinirvana with special prayers and offerings"
+      }
+    ]
+  },
+  {
+    "id": "pemayangtse",
+    "name": "Pemayangtse Monastery",
+    "shortDescription": "Sacred Nyingma monastery meaning 'Perfect Sublime Lotus'",
+    "fullDescription": "Pemayangtse Monastery, established in 1705, is one of the oldest and most significant monasteries in Sikkim. Built by Lama Lhatsun Chempo, it belongs to the Nyingma school of Tibetan Buddhism. The name means 'Perfect Sublime Lotus' and only monks of pure Tibetan lineage are admitted here. Located at 6,840 feet in Pelling, it offers spectacular views of Kanchenjunga and houses a remarkable seven-tiered wooden sculpture depicting the heavenly palace of Guru Rinpoche.",
+    "yearFounded": 1705,
+    "location": {
+      "lat": 27.3056,
+      "lng": 88.2528,
+      "address": "Pelling, West Sikkim 737113, India"
+    },
+    "images": {
+      "main": "/src/assets/pemayangtse-monastery.jpg",
+      "gallery": ["/src/assets/pemayangtse-monastery.jpg"]
+    },
+    "visitCount": 12850,
+    "cleanlinessRating": 4.8,
+    "mostVisited": true,
+    "panorama": {
+      "url": "/panoramas/pemayangtse-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/pemayangtse-narration.mp3",
+    "archives": [
+      {
+        "id": "ancient-manuscripts",
+        "title": "Nyingma Buddhist Texts",
+        "type": "manuscript",
+        "thumbnail": "/archives/nyingma-manuscripts-thumb.jpg",
+        "fullImage": "/archives/nyingma-manuscripts-full.jpg",
+        "caption": "Rare collection of ancient Nyingma Buddhist teachings and commentaries",
+        "metadata": {
+          "date": "18th-19th century",
+          "material": "Handmade paper and natural inks",
+          "language": "Tibetan and Sanskrit"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Chaam Festival",
+        "date": "2025-01-15",
+        "description": "Sacred masked dance festival featuring traditional Cham performances and ancient rituals"
+      },
+      {
+        "name": "Guru Rinpoche Festival",
+        "date": "2025-07-13",
+        "description": "Grand celebration honoring Padmasambhava with special teachings, ceremonies, and community prayers"
+      }
+    ]
+  },
+  {
+    "id": "enchey",
+    "name": "Enchey Monastery",
+    "shortDescription": "Solitary temple overlooking Gangtok with Kanchenjunga views",
+    "fullDescription": "Enchey Monastery, meaning 'Solitary Temple', was built in 1909 on a ridge overlooking Gangtok. Belonging to the Nyingma order of Tibetan Buddhism, it is believed to be built on the site blessed by Lama Druptob Karpo, a tantric master with flying powers. The monastery houses 90 monks and is famous for its annual Chaam dance during the Pang Lhabsol festival. Its strategic location offers breathtaking views of Kanchenjunga on clear days.",
+    "yearFounded": 1909,
+    "location": {
+      "lat": 27.3389,
+      "lng": 88.6169,
+      "address": "Gangtok, East Sikkim 737101, India"
+    },
+    "images": {
+      "main": "/src/assets/enchey-monastery.jpg",
+      "gallery": ["/src/assets/enchey-monastery.jpg"]
+    },
+    "visitCount": 9240,
+    "cleanlinessRating": 4.6,
+    "mostViewed": false,
+    "panorama": {
+      "url": "/panoramas/enchey-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/enchey-narration.mp3",
+    "archives": [
+      {
+        "id": "lama-druptob-artifacts",
+        "title": "Lama Druptob Karpo Relics",
+        "type": "artifact",
+        "thumbnail": "/archives/lama-druptob-thumb.jpg",
+        "fullImage": "/archives/lama-druptob-full.jpg",
+        "caption": "Sacred objects and relics associated with the tantric master Lama Druptob Karpo",
+        "metadata": {
+          "date": "Late 19th century",
+          "material": "Various sacred materials",
+          "significance": "Founding tantric master's legacy"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Pang Lhabsol",
+        "date": "2025-09-07",
+        "description": "Guardian deity festival featuring sacred Cham dances, traditional ceremonies, and mountain deity worship"
+      },
+      {
+        "name": "Bhumchu Festival",
+        "date": "2025-02-24",
+        "description": "Sacred water vessel ceremony with ancient prophecies and blessings for the coming year"
+      }
+    ]
+  },
+  {
+    "id": "tashiding",
+    "name": "Tashiding Monastery",
+    "shortDescription": "Sacred hilltop monastery with stunning Himalayan views",
+    "fullDescription": "Tashiding Monastery, built in 1717, is one of the most sacred monasteries in Sikkim. Perched on a hilltop between the Rathong and Rangit rivers, it offers panoramic views of the surrounding mountains. During the Bumchu festival, thousands of pilgrims gather here to witness the sacred water ceremony. The monastery is believed to wash away sins of those who visit with pure heart and devotion.",
+    "yearFounded": 1717,
+    "location": {
+      "lat": 27.3333,
+      "lng": 88.2833,
+      "address": "Tashiding, West Sikkim 737113, India"
+    },
+    "images": {
+      "main": "/src/assets/tashiding-monastery.jpg",
+      "gallery": ["/src/assets/tashiding-monastery.jpg"]
+    },
+    "visitCount": 8650,
+    "cleanlinessRating": 4.9,
+    "cleanest": true,
+    "panorama": {
+      "url": "/panoramas/tashiding-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/tashiding-narration.mp3",
+    "archives": [
+      {
+        "id": "bumchu-artifacts",
+        "title": "Sacred Bumchu Vessel",
+        "type": "artifact",
+        "thumbnail": "/archives/bumchu-vessel-thumb.jpg",
+        "fullImage": "/archives/bumchu-vessel-full.jpg",
+        "caption": "Ancient sacred vessel used in the Bumchu ceremony",
+        "metadata": {
+          "date": "18th century",
+          "material": "Consecrated bronze",
+          "significance": "Annual water level prophecy"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Bumchu Festival",
+        "date": "2025-02-24",
+        "description": "Sacred water ceremony with ancient prophecies and spiritual cleansing"
+      },
+      {
+        "name": "Buddha Jayanti",
+        "date": "2025-05-12",
+        "description": "Celebration of Buddha's birth with special prayers and community feast"
+      }
+    ]
+  },
+  {
+    "id": "dubdi",
+    "name": "Dubdi Monastery",
+    "shortDescription": "Oldest monastery in Sikkim, founded in 1701",
+    "fullDescription": "Dubdi Monastery, meaning 'the retreat', is the oldest monastery in Sikkim, built in 1701. Founded by Lhatsun Namkha Jigme, one of the three venerated lamas who consecrated the first Chogyal of Sikkim. Located near Yuksom, the ancient capital, it sits peacefully amidst dense forests and offers insights into Sikkim's earliest Buddhist traditions and the foundation of the kingdom.",
+    "yearFounded": 1701,
+    "location": {
+      "lat": 27.3667,
+      "lng": 88.2167,
+      "address": "Yuksom, West Sikkim 737113, India"
+    },
+    "images": {
+      "main": "/src/assets/dubdi-monastery.jpg",
+      "gallery": ["/src/assets/dubdi-monastery.jpg"]
+    },
+    "visitCount": 6420,
+    "cleanlinessRating": 4.5,
+    "historical": true,
+    "panorama": {
+      "url": "/panoramas/dubdi-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/dubdi-narration.mp3",
+    "archives": [
+      {
+        "id": "founding-artifacts",
+        "title": "Founding Lama Artifacts",
+        "type": "artifact",
+        "thumbnail": "/archives/founding-lama-thumb.jpg",
+        "fullImage": "/archives/founding-lama-full.jpg",
+        "caption": "Sacred objects from Lhatsun Namkha Jigme, one of the three venerated lamas",
+        "metadata": {
+          "date": "Early 18th century",
+          "material": "Bronze, silver, precious stones",
+          "significance": "Kingdom foundation relics"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Sangachoeling Festival",
+        "date": "2025-03-15",
+        "description": "Annual festival commemorating the monastery's founding with traditional ceremonies"
+      },
+      {
+        "name": "Drukpa Kunley Day",
+        "date": "2025-08-18",
+        "description": "Celebration honoring the divine madman saint with special prayers"
+      }
+    ]
+  },
+  {
+    "id": "sanga-choeling",
+    "name": "Sanga Choeling Monastery",
+    "shortDescription": "Second oldest monastery in Sikkim with panoramic mountain views",
+    "fullDescription": "Sanga Choeling Monastery, built in 1697, is the second oldest monastery in Sikkim. Located on a ridge top near Pelling, it offers spectacular views of the Kanchenjunga range. The monastery was founded by Lama Lhatsun Chempo and is known for its ancient murals and statues. Despite being partially in ruins, it remains an important pilgrimage site.",
+    "yearFounded": 1697,
+    "location": {
+      "lat": 27.3111,
+      "lng": 88.2444,
+      "address": "Pelling, West Sikkim 737113, India"
+    },
+    "images": {
+      "main": "/src/assets/sanga-choeling-monastery.jpg",
+      "gallery": ["/src/assets/sanga-choeling-monastery.jpg"]
+    },
+    "visitCount": 5940,
+    "cleanlinessRating": 4.3,
+    "historical": true,
+    "panorama": {
+      "url": "/panoramas/sanga-choeling-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/sanga-choeling-narration.mp3",
+    "archives": [
+      {
+        "id": "ancient-murals",
+        "title": "Ancient Wall Murals",
+        "type": "artwork",
+        "thumbnail": "/archives/ancient-murals-thumb.jpg",
+        "fullImage": "/archives/ancient-murals-full.jpg",
+        "caption": "17th century Buddhist murals depicting various deities and teachings",
+        "metadata": {
+          "date": "Late 17th century",
+          "material": "Natural pigments on stone",
+          "artist": "Tibetan master artists"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Heritage Preservation Day",
+        "date": "2025-05-30",
+        "description": "Annual event focusing on preserving the monastery's ancient heritage and artifacts"
+      },
+      {
+        "name": "Kanchenjunga Worship",
+        "date": "2025-10-15",
+        "description": "Special prayers dedicated to the sacred mountain Kanchenjunga"
+      }
+    ]
+  },
+  {
+    "id": "ralang",
+    "name": "Ralang Monastery",
+    "shortDescription": "Important Kagyu monastery with rich cultural traditions",
+    "fullDescription": "Ralang Monastery, established in 1768, is one of the most important monasteries of the Kagyu sect in Sikkim. Located in Ralang village, it was built by the fourth Chogyal Tenzin Namgyal. The monastery is famous for its annual Pang Lhabsol festival and houses several precious relics and thangka paintings. It plays a crucial role in preserving Sikkimese Buddhist culture.",
+    "yearFounded": 1768,
+    "location": {
+      "lat": 27.2333,
+      "lng": 88.5167,
+      "address": "Ralang, South Sikkim 737111, India"
+    },
+    "images": {
+      "main": "/src/assets/ralang-monastery.jpg",
+      "gallery": ["/src/assets/ralang-monastery.jpg"]
+    },
+    "visitCount": 8240,
+    "cleanlinessRating": 4.6,
+    "cultural": true,
+    "panorama": {
+      "url": "/panoramas/ralang-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/ralang-narration.mp3",
+    "archives": [
+      {
+        "id": "royal-thangkas",
+        "title": "Royal Thangka Collection",
+        "type": "artwork",
+        "thumbnail": "/archives/royal-thangkas-thumb.jpg",
+        "fullImage": "/archives/royal-thangkas-full.jpg",
+        "caption": "Precious thangka paintings commissioned by the Sikkimese royal family",
+        "metadata": {
+          "date": "18th-19th century",
+          "material": "Silk and gold thread",
+          "artist": "Royal court artists"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Pang Lhabsol Festival",
+        "date": "2025-09-07",
+        "description": "Major festival honoring Mount Kanchenjunga with traditional masked dances"
+      },
+      {
+        "name": "Thangka Exhibition",
+        "date": "2025-11-12",
+        "description": "Annual display of the monastery's precious thangka painting collection"
+      }
+    ]
+  },
+  {
+    "id": "khecheopalri",
+    "name": "Khecheopalri Monastery",
+    "shortDescription": "Sacred monastery near the wish-fulfilling lake",
+    "fullDescription": "Khecheopalri Monastery is located near the sacred Khecheopalri Lake, considered one of the most sacred lakes in Sikkim. The monastery, surrounded by dense forests, serves as a guardian of the holy lake. Pilgrims visit to make wishes at the lake and seek blessings at the monastery. The area is known for its pristine natural beauty and spiritual significance.",
+    "yearFounded": 1850,
+    "location": {
+      "lat": 27.3472,
+      "lng": 88.2069,
+      "address": "Khecheopalri, West Sikkim 737113, India"
+    },
+    "images": {
+      "main": "/src/assets/khecheopalri-monastery.jpg",
+      "gallery": ["/src/assets/khecheopalri-monastery.jpg"]
+    },
+    "visitCount": 11200,
+    "cleanlinessRating": 4.8,
+    "cleanest": true,
+    "panorama": {
+      "url": "/panoramas/khecheopalri-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/khecheopalri-narration.mp3",
+    "archives": [
+      {
+        "id": "lake-legends",
+        "title": "Sacred Lake Legends",
+        "type": "manuscript",
+        "thumbnail": "/archives/lake-legends-thumb.jpg",
+        "fullImage": "/archives/lake-legends-full.jpg",
+        "caption": "Ancient texts describing the legends and spiritual significance of Khecheopalri Lake",
+        "metadata": {
+          "date": "19th century",
+          "material": "Handmade paper and natural inks",
+          "language": "Tibetan"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Wishful Ceremony",
+        "date": "2025-04-08",
+        "description": "Special ceremony at the sacred lake where devotees make wishes for prosperity and peace"
+      },
+      {
+        "name": "Lake Preservation Day",
+        "date": "2025-09-22",
+        "description": "Environmental awareness and conservation activities around the sacred lake"
+      }
+    ]
+  },
+  {
+    "id": "tsuklakhang",
+    "name": "Tsuklakhang Monastery",
+    "shortDescription": "Royal monastery and former palace chapel in Gangtok",
+    "fullDescription": "Tsuklakhang Monastery, built in 1894, served as the royal chapel of the former Sikkim royal family. Located in the heart of Gangtok, it houses an impressive collection of Buddhist scriptures, statues, and artwork. The monastery is known for its peaceful atmosphere and serves as a center for Buddhist learning and meditation in the capital city.",
+    "yearFounded": 1894,
+    "location": {
+      "lat": 27.3314,
+      "lng": 88.6138,
+      "address": "Gangtok, East Sikkim 737101, India"
+    },
+    "images": {
+      "main": "/src/assets/tsuklakhang-monastery.jpg",
+      "gallery": ["/src/assets/tsuklakhang-monastery.jpg"]
+    },
+    "visitCount": 10350,
+    "cleanlinessRating": 4.7,
+    "royal": true,
+    "panorama": {
+      "url": "/panoramas/tsuklakhang-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/tsuklakhang-narration.mp3",
+    "archives": [
+      {
+        "id": "royal-artifacts",
+        "title": "Royal Buddhist Artifacts",
+        "type": "artifact",
+        "thumbnail": "/archives/royal-artifacts-thumb.jpg",
+        "fullImage": "/archives/royal-artifacts-full.jpg",
+        "caption": "Sacred objects and ceremonial items from the Sikkimese royal family",
+        "metadata": {
+          "date": "19th-20th century",
+          "material": "Gold, silver, precious gems",
+          "significance": "Royal Buddhist heritage"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Royal Heritage Festival",
+        "date": "2025-05-17",
+        "description": "Celebration of Sikkim's royal Buddhist heritage with special ceremonies and cultural programs"
+      },
+      {
+        "name": "Meditation Retreat",
+        "date": "2025-08-25",
+        "description": "Annual meditation retreat open to practitioners from all Buddhist traditions"
+      }
+    ]
+  },
+  {
+    "id": "lingdum",
+    "name": "Lingdum Monastery",
+    "shortDescription": "Modern monastery with traditional architecture and stunning views",
+    "fullDescription": "Lingdum Monastery, also known as Ranka Monastery, was built in 1999 and represents the newest addition to Sikkim's monastery heritage. Despite being recently constructed, it follows traditional Tibetan architectural principles and has quickly become an important center for Buddhist practice. Located 17 km from Gangtok, it offers magnificent views of the Himalayas and houses over 60 monks.",
+    "yearFounded": 1999,
+    "location": {
+      "lat": 27.2167,
+      "lng": 88.5833,
+      "address": "Ranka, East Sikkim 737135, India"
+    },
+    "images": {
+      "main": "/src/assets/lingdum-monastery.jpg",
+      "gallery": ["/src/assets/lingdum-monastery.jpg"]
+    },
+    "visitCount": 7890,
+    "cleanlinessRating": 4.9,
+    "modern": true,
+    "panorama": {
+      "url": "/panoramas/lingdum-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/lingdum-narration.mp3",
+    "archives": [
+      {
+        "id": "modern-traditions",
+        "title": "Modern Buddhist Practices",
+        "type": "manuscript",
+        "thumbnail": "/archives/modern-traditions-thumb.jpg",
+        "fullImage": "/archives/modern-traditions-full.jpg",
+        "caption": "Documentation of contemporary Buddhist practices and teachings at Lingdum",
+        "metadata": {
+          "date": "21st century",
+          "material": "Digital and traditional media",
+          "language": "English, Tibetan, Nepali"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Modern Buddhism Conference",
+        "date": "2025-06-20",
+        "description": "International conference on Buddhism in the modern world with scholars and practitioners"
+      },
+      {
+        "name": "Youth Buddhist Festival",
+        "date": "2025-10-08",
+        "description": "Festival designed to engage young people with Buddhist teachings and traditions"
+      }
+    ]
+  },
+  {
+    "id": "phensang",
+    "name": "Phensang Monastery",
+    "shortDescription": "Secluded mountain monastery with ancient meditation caves",
+    "fullDescription": "Phensang Monastery, built in 1721, is a hidden gem located in the remote hills of North Sikkim. Known for its ancient meditation caves and serene mountain setting, it has been a retreat center for serious Buddhist practitioners for centuries. The monastery follows the Nyingma tradition and is famous for its summer meditation intensives and the preservation of rare Buddhist texts.",
+    "yearFounded": 1721,
+    "location": {
+      "lat": 27.4833,
+      "lng": 88.5167,
+      "address": "Phensang, North Sikkim 737116, India"
+    },
+    "images": {
+      "main": "/src/assets/monastery-tibetan.jpg",
+      "gallery": ["/src/assets/monastery-tibetan.jpg"]
+    },
+    "visitCount": 3240,
+    "cleanlinessRating": 4.4,
+    "secluded": true,
+    "panorama": {
+      "url": "/panoramas/phensang-360.jpg",
+      "hotspots": []
+    },
+    "audioNarration": "/audio/phensang-narration.mp3",
+    "archives": [
+      {
+        "id": "meditation-caves",
+        "title": "Ancient Meditation Caves",
+        "type": "archaeological",
+        "thumbnail": "/archives/meditation-caves-thumb.jpg",
+        "fullImage": "/archives/meditation-caves-full.jpg",
+        "caption": "Natural and carved meditation caves used by hermit monks for centuries",
+        "metadata": {
+          "date": "18th century onwards",
+          "material": "Natural rock formations",
+          "significance": "Hermitage and retreat practice"
+        }
+      }
+    ],
+    "culturalEvents": [
+      {
+        "name": "Summer Meditation Intensive",
+        "date": "2025-07-01",
+        "description": "Three-month intensive meditation retreat in the tradition of ancient hermit practices"
+      },
+      {
+        "name": "Rare Text Exhibition",
+        "date": "2025-09-15",
+        "description": "Display of rare Buddhist manuscripts preserved at the monastery"
+      }
+    ]
+  }
+]

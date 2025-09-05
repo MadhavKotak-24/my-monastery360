@@ -3,17 +3,22 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Navigation from "@/components/Navigation";
+import MonasteryChatbot from "@/components/MonasteryChatbot";
+import { AuthProvider } from "@/hooks/useAuth";
 import Index from "./pages/Index";
 import MapPage from "./pages/MapPage";
 import MonasteryDetail from "./pages/MonasteryDetail";
 import CultureCalendar from "./pages/CultureCalendar";
+import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
 const App = () => {
+  const [isChatbotMinimized, setIsChatbotMinimized] = useState(false);
+  
   useEffect(() => {
     // Register service worker for offline functionality
     if ('serviceWorker' in navigator) {
@@ -31,22 +36,31 @@ const App = () => {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <div className="min-h-screen bg-background">
-            <Navigation />
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/map" element={<MapPage />} />
-              <Route path="/monastery/:id" element={<MonasteryDetail />} />
-              <Route path="/calendar" element={<CultureCalendar />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </div>
-        </BrowserRouter>
-      </TooltipProvider>
+      <AuthProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <div className="min-h-screen bg-background">
+              <Navigation />
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/map" element={<MapPage />} />
+                <Route path="/monastery/:id" element={<MonasteryDetail />} />
+                <Route path="/calendar" element={<CultureCalendar />} />
+                <Route path="/auth" element={<Auth />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+              
+              {/* AI Chatbot */}
+              <MonasteryChatbot 
+                isMinimized={isChatbotMinimized}
+                onToggleMinimize={() => setIsChatbotMinimized(!isChatbotMinimized)}
+              />
+            </div>
+          </BrowserRouter>
+        </TooltipProvider>
+      </AuthProvider>
     </QueryClientProvider>
   );
 };
