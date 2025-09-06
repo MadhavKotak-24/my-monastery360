@@ -106,6 +106,14 @@ serve(async (req) => {
     const data = await response.json();
     console.log('OpenAI response:', data);
     
+    if (data.error) {
+      throw new Error(`OpenAI API Error: ${data.error.message}`);
+    }
+    
+    if (!data.choices || data.choices.length === 0) {
+      throw new Error('No response generated from OpenAI');
+    }
+    
     const reply = data.choices[0].message.content;
 
     return new Response(JSON.stringify({ reply }), {
