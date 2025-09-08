@@ -54,7 +54,7 @@ const Index = () => {
             <div className="inline-flex items-center space-x-2 mb-4">
               <Sparkles className="w-8 h-8 text-primary animate-float" />
               <h2 className="text-5xl font-serif font-bold text-primary">
-                Sacred Spaces of Sikkim
+                ✨ Sacred Spaces of Sikkim ✨
               </h2>
               <Sparkles className="w-8 h-8 text-primary animate-float-slow" />
             </div>
