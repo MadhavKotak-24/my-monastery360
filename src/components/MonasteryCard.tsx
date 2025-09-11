@@ -104,8 +104,8 @@ const MonasteryCard = ({ monastery }: MonasteryCardProps) => {
               </Link>
             </Button>
             <Button asChild variant="pilgrim" size="sm" className="group-hover:border-accent">
-              <Link to={`/monastery/${monastery.id}`}>
-                Details
+              <Link to={`/booking/${monastery.id}`}>
+                Book Visit
               </Link>
             </Button>
           </CardFooter>

@@ -208,9 +208,14 @@ const MonasteryDetail = () => {
                 <h3 className="font-serif font-bold mb-4 text-primary">
                   Audio Guide
                 </h3>
-                <Button variant="sacred" className="w-full">
+                <Button variant="sacred" className="w-full mb-3">
                   <Volume2 className="w-4 h-4 mr-2" />
                   Play Narration
+                </Button>
+                <Button asChild className="w-full monastery-gradient">
+                  <Link to={`/booking/${id}`}>
+                    Book Your Visit
+                  </Link>
                 </Button>
               </CardContent>
             </Card>

@@ -10,6 +10,7 @@ import { AuthProvider } from "@/hooks/useAuth";
 import Index from "./pages/Index";
 import MapPage from "./pages/MapPage";
 import MonasteryDetail from "./pages/MonasteryDetail";
+import BookingPage from "./pages/BookingPage";
 import CultureCalendar from "./pages/CultureCalendar";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
@@ -47,6 +48,7 @@ const App = () => {
                 <Route path="/" element={<Index />} />
                 <Route path="/map" element={<MapPage />} />
                 <Route path="/monastery/:id" element={<MonasteryDetail />} />
+                <Route path="/booking/:id" element={<BookingPage />} />
                 <Route path="/calendar" element={<CultureCalendar />} />
                 <Route path="/auth" element={<Auth />} />
                 <Route path="*" element={<NotFound />} />
