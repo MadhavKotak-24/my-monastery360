@@ -11,6 +11,7 @@ import Index from "./pages/Index";
 import MapPage from "./pages/MapPage";
 import MonasteryDetail from "./pages/MonasteryDetail";
 import BookingPage from "./pages/BookingPage";
+import BookingsPage from "./pages/BookingsPage";
 import CultureCalendar from "./pages/CultureCalendar";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
@@ -49,6 +50,7 @@ const App = () => {
                 <Route path="/map" element={<MapPage />} />
                 <Route path="/monastery/:id" element={<MonasteryDetail />} />
                 <Route path="/booking/:id" element={<BookingPage />} />
+                <Route path="/bookings" element={<BookingsPage />} />
                 <Route path="/calendar" element={<CultureCalendar />} />
                 <Route path="/auth" element={<Auth />} />
                 <Route path="*" element={<NotFound />} />

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Map, Calendar, Eye, Archive, Sparkles } from "lucide-react";
+import { Map, Calendar, Eye, Archive, Sparkles, Plane } from "lucide-react";
 import MonasteryCard from "@/components/MonasteryCard";
 import monastariesData from "@/data/updatedMonasteries.json";
 
@@ -82,6 +82,12 @@ const Index = () => {
                 <Link to="/map" className="flex items-center space-x-2">
                   <Map className="w-5 h-5" />
                   <span>Explore Interactive Map</span>
+                </Link>
+              </Button>
+              <Button asChild variant="pilgrim" size="lg" className="animate-float-slow">
+                <Link to="/bookings" className="flex items-center space-x-2">
+                  <Plane className="w-5 h-5" />
+                  <span>Book Your Visit</span>
                 </Link>
               </Button>
               <Button asChild variant="pilgrim" size="lg" className="animate-float-slow">
