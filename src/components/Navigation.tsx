@@ -13,7 +13,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="monastery-card border-b border-border/50 sticky top-0 z-50 backdrop-blur-sm">
+    <nav className="glass-nav sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <div className="w-8 h-8 monastery-gradient rounded-full flex items-center justify-center">

@@ -13,69 +13,72 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Monastery-inspired color palette */
-    --background: 35 25% 97%;
-    --foreground: 25 35% 15%;
+    /* Modern monastery color palette */
+    --background: 44 33% 96%; /* Soft Cream */
+    --foreground: 0 0% 20%; /* Charcoal Gray */
 
-    --card: 40 20% 98%;
-    --card-foreground: 25 35% 15%;
+    --card: 44 33% 98%;
+    --card-foreground: 0 0% 20%;
 
-    --popover: 40 20% 98%;
-    --popover-foreground: 25 35% 15%;
+    --popover: 44 33% 98%;
+    --popover-foreground: 0 0% 20%;
 
-    /* Rich monastery brown */
-    --primary: 25 45% 25%;
-    --primary-foreground: 35 25% 97%;
+    /* Deep Maroon primary */
+    --primary: 8 48% 32%; /* Deep Maroon */
+    --primary-foreground: 44 33% 96%;
 
-    /* Warm cream secondary */
-    --secondary: 40 30% 92%;
-    --secondary-foreground: 25 45% 25%;
+    /* Sky Blue secondary */
+    --secondary: 197 86% 65%; /* Sky Blue */
+    --secondary-foreground: 0 0% 20%;
 
     /* Soft muted tones */
-    --muted: 35 20% 90%;
-    --muted-foreground: 25 20% 45%;
+    --muted: 44 20% 92%;
+    --muted-foreground: 0 0% 45%;
 
-    /* Golden accent */
-    --accent: 45 65% 75%;
-    --accent-foreground: 25 45% 25%;
+    /* Golden Yellow accent */
+    --accent: 48 86% 63%; /* Golden Yellow */
+    --accent-foreground: 0 0% 20%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 35 25% 97%;
+    --destructive-foreground: 44 33% 96%;
 
-    --border: 35 15% 88%;
-    --input: 35 15% 88%;
-    --ring: 25 45% 25%;
+    --border: 44 15% 88%;
+    --input: 44 15% 92%;
+    --ring: 8 48% 32%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    /* Monastery sidebar colors */
-    --sidebar-background: 25 30% 95%;
-    --sidebar-foreground: 25 25% 35%;
-    --sidebar-primary: 25 45% 25%;
-    --sidebar-primary-foreground: 35 25% 97%;
-    --sidebar-accent: 40 25% 88%;
-    --sidebar-accent-foreground: 25 45% 25%;
-    --sidebar-border: 35 15% 85%;
-    --sidebar-ring: 45 65% 75%;
+    /* Modern sidebar colors */
+    --sidebar-background: 44 33% 96%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-primary: 8 48% 32%;
+    --sidebar-primary-foreground: 44 33% 96%;
+    --sidebar-accent: 197 86% 65%;
+    --sidebar-accent-foreground: 0 0% 20%;
+    --sidebar-border: 44 15% 85%;
+    --sidebar-ring: 48 86% 63%;
 
-    /* Custom monastery design tokens */
-    --monastery-stone: 35 15% 85%;
-    --monastery-wood: 25 35% 45%;
-    --monastery-gold: 45 65% 65%;
-    --monastery-sage: 100 20% 75%;
+    /* Modern monastery design tokens */
+    --monastery-stone: 44 15% 85%;
+    --monastery-wood: 8 48% 32%;
+    --monastery-gold: 48 86% 63%;
+    --monastery-sage: 197 86% 65%;
     
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--monastery-wood)));
-    --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--monastery-stone)));
-    --gradient-golden: linear-gradient(135deg, hsl(var(--monastery-gold)), hsl(var(--accent)));
+    /* Modern gradients with transparency */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.9), hsl(var(--secondary) / 0.8));
+    --gradient-card: linear-gradient(180deg, hsl(var(--card) / 0.8), hsl(var(--background) / 0.9));
+    --gradient-golden: linear-gradient(135deg, hsl(var(--accent) / 0.9), hsl(var(--secondary) / 0.7));
+    --gradient-glass: linear-gradient(135deg, hsl(var(--background) / 0.8), hsl(var(--card) / 0.6));
     
-    /* Shadows */
-    --shadow-monastery: 0 10px 40px -15px hsl(var(--primary) / 0.2);
-    --shadow-card: 0 4px 20px -8px hsl(var(--primary) / 0.15);
-    --shadow-glow: 0 0 30px hsl(var(--monastery-gold) / 0.3);
+    /* Modern shadows with transparency */
+    --shadow-monastery: 0 20px 60px -15px hsl(var(--primary) / 0.3);
+    --shadow-card: 0 8px 32px -8px hsl(var(--primary) / 0.15);
+    --shadow-glow: 0 0 40px hsl(var(--accent) / 0.4);
+    --shadow-glass: 0 8px 32px hsl(0 0% 0% / 0.1);
     
-    /* Transitions */
-    --transition-monastery: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Smooth transitions */
+    --transition-monastery: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glass: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   /* Custom CSS classes for monastery theme */
@@ -88,57 +91,59 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark monastery theme */
-    --background: 25 25% 8%;
-    --foreground: 35 25% 92%;
+    /* Modern dark theme */
+    --background: 0 0% 8%;
+    --foreground: 44 33% 92%;
 
-    --card: 25 20% 12%;
-    --card-foreground: 35 25% 92%;
+    --card: 0 0% 12%;
+    --card-foreground: 44 33% 92%;
 
-    --popover: 25 20% 12%;
-    --popover-foreground: 35 25% 92%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 44 33% 92%;
 
-    --primary: 45 65% 75%;
-    --primary-foreground: 25 25% 8%;
+    --primary: 48 86% 63%; /* Golden Yellow in dark */
+    --primary-foreground: 0 0% 8%;
 
-    --secondary: 25 15% 18%;
-    --secondary-foreground: 35 25% 92%;
+    --secondary: 8 48% 32%; /* Deep Maroon */
+    --secondary-foreground: 44 33% 92%;
 
-    --muted: 25 15% 18%;
-    --muted-foreground: 35 15% 65%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 25 35% 25%;
-    --accent-foreground: 35 25% 92%;
+    --accent: 197 86% 65%; /* Sky Blue */
+    --accent-foreground: 0 0% 8%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 35 25% 92%;
+    --destructive-foreground: 44 33% 92%;
 
-    --border: 25 15% 20%;
-    --input: 25 15% 20%;
-    --ring: 45 65% 75%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 48 86% 63%;
     
-    --sidebar-background: 25 20% 10%;
-    --sidebar-foreground: 35 20% 85%;
-    --sidebar-primary: 45 65% 75%;
-    --sidebar-primary-foreground: 25 25% 8%;
-    --sidebar-accent: 25 15% 18%;
-    --sidebar-accent-foreground: 35 20% 85%;
-    --sidebar-border: 25 15% 20%;
-    --sidebar-ring: 45 65% 75%;
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 44 20% 85%;
+    --sidebar-primary: 48 86% 63%;
+    --sidebar-primary-foreground: 0 0% 8%;
+    --sidebar-accent: 0 0% 18%;
+    --sidebar-accent-foreground: 44 20% 85%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 48 86% 63%;
 
-    /* Dark monastery tokens */
-    --monastery-stone: 25 10% 22%;
-    --monastery-wood: 25 25% 35%;
-    --monastery-gold: 45 75% 65%;
-    --monastery-sage: 100 15% 45%;
+    /* Dark modern tokens */
+    --monastery-stone: 0 0% 22%;
+    --monastery-wood: 8 48% 32%;
+    --monastery-gold: 48 86% 63%;
+    --monastery-sage: 197 86% 65%;
     
-    --gradient-hero: linear-gradient(135deg, hsl(var(--monastery-gold)), hsl(var(--primary)));
-    --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--monastery-stone)));
-    --gradient-golden: linear-gradient(135deg, hsl(var(--monastery-gold)), hsl(var(--accent)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.9), hsl(var(--accent) / 0.8));
+    --gradient-card: linear-gradient(180deg, hsl(var(--card) / 0.8), hsl(var(--background) / 0.9));
+    --gradient-golden: linear-gradient(135deg, hsl(var(--accent) / 0.9), hsl(var(--primary) / 0.7));
+    --gradient-glass: linear-gradient(135deg, hsl(var(--background) / 0.8), hsl(var(--card) / 0.6));
     
-    --shadow-monastery: 0 10px 40px -15px hsl(0 0% 0% / 0.4);
-    --shadow-card: 0 4px 20px -8px hsl(0 0% 0% / 0.3);
-    --shadow-glow: 0 0 30px hsl(var(--monastery-gold) / 0.2);
+    --shadow-monastery: 0 20px 60px -15px hsl(0 0% 0% / 0.6);
+    --shadow-card: 0 8px 32px -8px hsl(0 0% 0% / 0.4);
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.3);
+    --shadow-glass: 0 8px 32px hsl(0 0% 0% / 0.2);
   }
 }
 
@@ -152,20 +157,23 @@ All colors MUST be HSL.
     font-feature-settings: "liga" 1, "kern" 1;
   }
 
-  /* Custom monastery utilities */
+  /* Modern monastery utilities */
   .monastery-gradient {
     background: var(--gradient-hero);
   }
   
   .monastery-card {
-    background: var(--gradient-card);
-    box-shadow: var(--shadow-card);
+    background: var(--gradient-glass);
+    backdrop-filter: blur(10px);
+    border: 1px solid hsl(var(--border) / 0.5);
+    box-shadow: var(--shadow-glass);
     transition: var(--transition-monastery);
   }
   
   .monastery-card:hover {
     box-shadow: var(--shadow-monastery);
-    transform: translateY(-2px);
+    transform: translateY(-4px) scale(1.02);
+    border-color: hsl(var(--accent) / 0.3);
   }
   
   .monastery-glow {
@@ -177,5 +185,18 @@ All colors MUST be HSL.
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  
+  .glass-card {
+    background: hsl(var(--background) / 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--border) / 0.3);
+    box-shadow: var(--shadow-glass);
+  }
+  
+  .glass-nav {
+    background: hsl(var(--background) / 0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid hsl(var(--border) / 0.2);
   }
 }

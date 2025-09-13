@@ -31,7 +31,7 @@ const MonasteryCard = ({ monastery }: MonasteryCardProps) => {
   return (
     <HoverCard>
       <HoverCardTrigger asChild>
-        <Card className="monastery-card group overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 animate-fade-in-up cursor-pointer">
+        <Card className="glass-card hover:monastery-glow group overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 animate-fade-in-up cursor-pointer">
           <div className="relative h-48 overflow-hidden">
             <img
               src={monastery.images.main}
